@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #include "GameData.h"
+#import "PhotoViewController.h"
+#import "UpgradeViewController.h"
+#import "ProjectileViewController.h"
 
 
 @protocol MenuViewControllerDelegate <NSObject>
@@ -19,26 +22,23 @@
 - (void) updateScore:(int) score;
 @end
 
-@interface MenuViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface MenuViewController : UIViewController
+
 @property (nonatomic, strong) IBOutlet UIButton *projectileViewButton;
 @property (nonatomic, strong) IBOutlet UIButton *projectileBackButton;
 @property (nonatomic, strong) IBOutlet UIButton *upgradeBackButton;
 @property (nonatomic, strong) IBOutlet UIButton *resumeKnop;
 @property (nonatomic, strong) IBOutlet UIButton *imageKnop;
-@property (nonatomic, strong) IBOutlet UIButton *useCamera;
-@property (nonatomic, strong) IBOutlet UIButton *useLibrary;
-@property (nonatomic, strong) IBOutlet UIButton *doneSelecting;
+
 @property (nonatomic, strong) IBOutlet UIButton *newgame;
 @property (nonatomic, assign) id <MenuViewControllerDelegate> delegate;
+@property (nonatomic, strong) PhotoViewController *photoViewController;
+@property (nonatomic, strong) UpgradeViewController *upgradeViewController;
+@property (nonatomic, strong) ProjectileViewController *projectileViewController;
 
 @property (nonatomic, strong) IBOutlet UIView *menuView;
 @property (nonatomic, strong) IBOutlet UIView *projectileView;
 @property (nonatomic, strong) IBOutlet UIView *upgradeView;
-@property (nonatomic, strong) IBOutlet UIView *pickImageView;
-@property (nonatomic, strong) UIImagePickerController *picker;
-@property (nonatomic, strong) IBOutlet UIImageView *selectedImage;
-@property (nonatomic, strong) IBOutlet UILabel *selectedImageLabel;
-@property (nonatomic, assign) BOOL firstTime;
 
 @property (nonatomic, strong) IBOutlet UIButton *buttonUpgradeHealth;
 @property (nonatomic, strong) IBOutlet UIButton *buttonUpgradeFireRate;
@@ -102,4 +102,5 @@
 - (void) visible;
 -(IBAction)projectileMenuClosed:(id)sender;
 -(IBAction)upgradeMenuClosed:(id)sender;
+
 @end
