@@ -8,6 +8,94 @@
 
 /* Begin PBXBuildFile section */
 		829EA93E18166847006341B8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829EA93D18166847006341B8 /* CoreMotion.framework */; };
+		CDDD0C7B183246CD004D9FF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C03183246CD004D9FF0 /* AppDelegate.m */; };
+		CDDD0C7C183246CD004D9FF0 /* Cannon.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C05183246CD004D9FF0 /* Cannon.m */; };
+		CDDD0C7D183246CD004D9FF0 /* DarkMatterProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C07183246CD004D9FF0 /* DarkMatterProjectile.m */; };
+		CDDD0C7E183246CD004D9FF0 /* DefaultProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C09183246CD004D9FF0 /* DefaultProjectile.m */; };
+		CDDD0C7F183246CD004D9FF0 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C0B183246CD004D9FF0 /* Enemy.m */; };
+		CDDD0C80183246CD004D9FF0 /* Enemy1.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C0D183246CD004D9FF0 /* Enemy1.m */; };
+		CDDD0C81183246CD004D9FF0 /* Enemy2.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C0F183246CD004D9FF0 /* Enemy2.m */; };
+		CDDD0C82183246CD004D9FF0 /* EnemyProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C11183246CD004D9FF0 /* EnemyProjectile.m */; };
+		CDDD0C83183246CD004D9FF0 /* FrequentProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C13183246CD004D9FF0 /* FrequentProjectile.m */; };
+		CDDD0C84183246CD004D9FF0 /* GameData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C15183246CD004D9FF0 /* GameData.m */; };
+		CDDD0C85183246CD004D9FF0 /* Heart.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C17183246CD004D9FF0 /* Heart.m */; };
+		CDDD0C86183246CD004D9FF0 /* LightningProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C19183246CD004D9FF0 /* LightningProjectile.m */; };
+		CDDD0C87183246CD004D9FF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C1A183246CD004D9FF0 /* main.m */; };
+		CDDD0C88183246CD004D9FF0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C1C183246CD004D9FF0 /* MainViewController.m */; };
+		CDDD0C89183246CD004D9FF0 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C1D183246CD004D9FF0 /* MenuView.xib */; };
+		CDDD0C8A183246CD004D9FF0 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C1F183246CD004D9FF0 /* MenuViewController.m */; };
+		CDDD0C8B183246CD004D9FF0 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C21183246CD004D9FF0 /* Object.m */; };
+		CDDD0C8C183246CD004D9FF0 /* Playfield.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C23183246CD004D9FF0 /* Playfield.m */; };
+		CDDD0C8D183246CD004D9FF0 /* PowerProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C25183246CD004D9FF0 /* PowerProjectile.m */; };
+		CDDD0C8E183246CD004D9FF0 /* Projectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C27183246CD004D9FF0 /* Projectile.m */; };
+		CDDD0C8F183246CD004D9FF0 /* UnstoppableProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C2A183246CD004D9FF0 /* UnstoppableProjectile.m */; };
+		CDDD0C90183246CD004D9FF0 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C2C183246CD004D9FF0 /* GameData.plist */; };
+		CDDD0C91183246CD004D9FF0 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C2D183246CD004D9FF0 /* Levels.plist */; };
+		CDDD0C92183246CD004D9FF0 /* Super Defender-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C2E183246CD004D9FF0 /* Super Defender-Info.plist */; };
+		CDDD0C93183246CD004D9FF0 /* iPhone Non-Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C32183246CD004D9FF0 /* iPhone Non-Retina.png */; };
+		CDDD0C94183246CD004D9FF0 /* iPhone Retina (iOS 6 and Prior).png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C33183246CD004D9FF0 /* iPhone Retina (iOS 6 and Prior).png */; };
+		CDDD0C95183246CD004D9FF0 /* iPhone Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C34183246CD004D9FF0 /* iPhone Retina.png */; };
+		CDDD0C96183246CD004D9FF0 /* SP_iPhone Non-Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C35183246CD004D9FF0 /* SP_iPhone Non-Retina.png */; };
+		CDDD0C97183246CD004D9FF0 /* SP_iPhone Retina (iOS 6 and Prior).png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C36183246CD004D9FF0 /* SP_iPhone Retina (iOS 6 and Prior).png */; };
+		CDDD0C98183246CD004D9FF0 /* SP_iPhone Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C37183246CD004D9FF0 /* SP_iPhone Retina.png */; };
+		CDDD0C99183246CD004D9FF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C39183246CD004D9FF0 /* Default-568h@2x.png */; };
+		CDDD0C9A183246CD004D9FF0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C3A183246CD004D9FF0 /* Default.png */; };
+		CDDD0C9B183246CD004D9FF0 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C3B183246CD004D9FF0 /* Default~iphone.png */; };
+		CDDD0C9C183246CD004D9FF0 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C3D183246CD004D9FF0 /* 0.png */; };
+		CDDD0C9D183246CD004D9FF0 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C3E183246CD004D9FF0 /* 10.png */; };
+		CDDD0C9E183246CD004D9FF0 /* 100.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C3F183246CD004D9FF0 /* 100.png */; };
+		CDDD0C9F183246CD004D9FF0 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C40183246CD004D9FF0 /* 20.png */; };
+		CDDD0CA0183246CD004D9FF0 /* 30.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C41183246CD004D9FF0 /* 30.png */; };
+		CDDD0CA1183246CD004D9FF0 /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C42183246CD004D9FF0 /* 40.png */; };
+		CDDD0CA2183246CD004D9FF0 /* 50.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C43183246CD004D9FF0 /* 50.png */; };
+		CDDD0CA3183246CD004D9FF0 /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C44183246CD004D9FF0 /* 60.png */; };
+		CDDD0CA4183246CD004D9FF0 /* 70.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C45183246CD004D9FF0 /* 70.png */; };
+		CDDD0CA5183246CD004D9FF0 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C46183246CD004D9FF0 /* 80.png */; };
+		CDDD0CA6183246CD004D9FF0 /* 90.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C47183246CD004D9FF0 /* 90.png */; };
+		CDDD0CA7183246CD004D9FF0 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C49183246CD004D9FF0 /* background.png */; };
+		CDDD0CA8183246CD004D9FF0 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C4A183246CD004D9FF0 /* background@2x.png */; };
+		CDDD0CA9183246CD004D9FF0 /* barrel.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C4B183246CD004D9FF0 /* barrel.png */; };
+		CDDD0CAA183246CD004D9FF0 /* barrel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C4C183246CD004D9FF0 /* barrel@2x.png */; };
+		CDDD0CAB183246CD004D9FF0 /* base.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C4D183246CD004D9FF0 /* base.png */; };
+		CDDD0CAC183246CD004D9FF0 /* base@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C4E183246CD004D9FF0 /* base@2x.png */; };
+		CDDD0CAD183246CD004D9FF0 /* BigExplosion.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C4F183246CD004D9FF0 /* BigExplosion.png */; };
+		CDDD0CAE183246CD004D9FF0 /* DefenderHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C50183246CD004D9FF0 /* DefenderHeart.png */; };
+		CDDD0CAF183246CD004D9FF0 /* DefenderHeart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C51183246CD004D9FF0 /* DefenderHeart@2x.png */; };
+		CDDD0CB0183246CD004D9FF0 /* EasyEnemy.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C52183246CD004D9FF0 /* EasyEnemy.png */; };
+		CDDD0CB1183246CD004D9FF0 /* EasyEnemy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C53183246CD004D9FF0 /* EasyEnemy@2x.png */; };
+		CDDD0CB2183246CD004D9FF0 /* Explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C54183246CD004D9FF0 /* Explosion.png */; };
+		CDDD0CB3183246CD004D9FF0 /* HardEnemy.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C55183246CD004D9FF0 /* HardEnemy.png */; };
+		CDDD0CB4183246CD004D9FF0 /* HardEnemy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C56183246CD004D9FF0 /* HardEnemy@2x.png */; };
+		CDDD0CB5183246CD004D9FF0 /* PdarkMatter.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C58183246CD004D9FF0 /* PdarkMatter.png */; };
+		CDDD0CB6183246CD004D9FF0 /* PmoveSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C59183246CD004D9FF0 /* PmoveSpeed.png */; };
+		CDDD0CB7183246CD004D9FF0 /* Ppower.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C5A183246CD004D9FF0 /* Ppower.png */; };
+		CDDD0CB8183246CD004D9FF0 /* PrateOfFire.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C5B183246CD004D9FF0 /* PrateOfFire.png */; };
+		CDDD0CB9183246CD004D9FF0 /* Punstoppable.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C5C183246CD004D9FF0 /* Punstoppable.png */; };
+		CDDD0CBA183246CD004D9FF0 /* DarkMatterProjectile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C5E183246CD004D9FF0 /* DarkMatterProjectile.png */; };
+		CDDD0CBB183246CD004D9FF0 /* DarkMatterProjectile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C5F183246CD004D9FF0 /* DarkMatterProjectile@2x.png */; };
+		CDDD0CBC183246CD004D9FF0 /* EnemyProjectile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C60183246CD004D9FF0 /* EnemyProjectile.png */; };
+		CDDD0CBD183246CD004D9FF0 /* EnemyProjectile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C61183246CD004D9FF0 /* EnemyProjectile@2x.png */; };
+		CDDD0CBE183246CD004D9FF0 /* FrequentProjectile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C62183246CD004D9FF0 /* FrequentProjectile.png */; };
+		CDDD0CBF183246CD004D9FF0 /* FrequentProjectile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C63183246CD004D9FF0 /* FrequentProjectile@2x.png */; };
+		CDDD0CC0183246CD004D9FF0 /* LightningProjectile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C64183246CD004D9FF0 /* LightningProjectile.png */; };
+		CDDD0CC1183246CD004D9FF0 /* LightningProjectile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C65183246CD004D9FF0 /* LightningProjectile@2x.png */; };
+		CDDD0CC2183246CD004D9FF0 /* NormalProjectile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C66183246CD004D9FF0 /* NormalProjectile.png */; };
+		CDDD0CC3183246CD004D9FF0 /* NormalProjectile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C67183246CD004D9FF0 /* NormalProjectile@2x.png */; };
+		CDDD0CC4183246CD004D9FF0 /* PowerProjectile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C68183246CD004D9FF0 /* PowerProjectile.png */; };
+		CDDD0CC5183246CD004D9FF0 /* PowerProjectile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C69183246CD004D9FF0 /* PowerProjectile@2x.png */; };
+		CDDD0CC6183246CD004D9FF0 /* UnstoppableProjectile.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C6A183246CD004D9FF0 /* UnstoppableProjectile.png */; };
+		CDDD0CC7183246CD004D9FF0 /* UnstoppableProjectile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C6B183246CD004D9FF0 /* UnstoppableProjectile@2x.png */; };
+		CDDD0CC8183246CD004D9FF0 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C6D183246CD004D9FF0 /* menu.png */; };
+		CDDD0CC9183246CD004D9FF0 /* pauzebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C6E183246CD004D9FF0 /* pauzebutton.png */; };
+		CDDD0CCA183246CD004D9FF0 /* pauzebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C6F183246CD004D9FF0 /* pauzebutton@2x.png */; };
+		CDDD0CCB183246CD004D9FF0 /* ProjectileScherm_v1_leeg.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C70183246CD004D9FF0 /* ProjectileScherm_v1_leeg.png */; };
+		CDDD0CCC183246CD004D9FF0 /* UpgradeScherm_v1_leeg.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C71183246CD004D9FF0 /* UpgradeScherm_v1_leeg.png */; };
+		CDDD0CCD183246CD004D9FF0 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C73183246CD004D9FF0 /* health.png */; };
+		CDDD0CCE183246CD004D9FF0 /* moveSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C74183246CD004D9FF0 /* moveSpeed.png */; };
+		CDDD0CCF183246CD004D9FF0 /* power.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C75183246CD004D9FF0 /* power.png */; };
+		CDDD0CD0183246CD004D9FF0 /* rateOfFire.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C76183246CD004D9FF0 /* rateOfFire.png */; };
+		CDDD0CD1183246CD004D9FF0 /* rotSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C77183246CD004D9FF0 /* rotSpeed.png */; };
+		CDDD0CD2183246CD004D9FF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C79183246CD004D9FF0 /* InfoPlist.strings */; };
 		DC8DD040180C0A8200857A2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8DD03F180C0A8200857A2D /* UIKit.framework */; };
 		DC8DD042180C0A8200857A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8DD041180C0A8200857A2D /* Foundation.framework */; };
 		DC8DD044180C0A8200857A2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8DD043180C0A8200857A2D /* CoreGraphics.framework */; };
@@ -15,6 +103,114 @@
 
 /* Begin PBXFileReference section */
 		829EA93D18166847006341B8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CDDD0C02183246CD004D9FF0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDDD0C03183246CD004D9FF0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDDD0C04183246CD004D9FF0 /* Cannon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cannon.h; sourceTree = "<group>"; };
+		CDDD0C05183246CD004D9FF0 /* Cannon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cannon.m; sourceTree = "<group>"; };
+		CDDD0C06183246CD004D9FF0 /* DarkMatterProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkMatterProjectile.h; sourceTree = "<group>"; };
+		CDDD0C07183246CD004D9FF0 /* DarkMatterProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkMatterProjectile.m; sourceTree = "<group>"; };
+		CDDD0C08183246CD004D9FF0 /* DefaultProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultProjectile.h; sourceTree = "<group>"; };
+		CDDD0C09183246CD004D9FF0 /* DefaultProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultProjectile.m; sourceTree = "<group>"; };
+		CDDD0C0A183246CD004D9FF0 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		CDDD0C0B183246CD004D9FF0 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		CDDD0C0C183246CD004D9FF0 /* Enemy1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy1.h; sourceTree = "<group>"; };
+		CDDD0C0D183246CD004D9FF0 /* Enemy1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy1.m; sourceTree = "<group>"; };
+		CDDD0C0E183246CD004D9FF0 /* Enemy2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy2.h; sourceTree = "<group>"; };
+		CDDD0C0F183246CD004D9FF0 /* Enemy2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy2.m; sourceTree = "<group>"; };
+		CDDD0C10183246CD004D9FF0 /* EnemyProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyProjectile.h; sourceTree = "<group>"; };
+		CDDD0C11183246CD004D9FF0 /* EnemyProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyProjectile.m; sourceTree = "<group>"; };
+		CDDD0C12183246CD004D9FF0 /* FrequentProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequentProjectile.h; sourceTree = "<group>"; };
+		CDDD0C13183246CD004D9FF0 /* FrequentProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequentProjectile.m; sourceTree = "<group>"; };
+		CDDD0C14183246CD004D9FF0 /* GameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameData.h; sourceTree = "<group>"; };
+		CDDD0C15183246CD004D9FF0 /* GameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameData.m; sourceTree = "<group>"; };
+		CDDD0C16183246CD004D9FF0 /* Heart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heart.h; sourceTree = "<group>"; };
+		CDDD0C17183246CD004D9FF0 /* Heart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Heart.m; sourceTree = "<group>"; };
+		CDDD0C18183246CD004D9FF0 /* LightningProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightningProjectile.h; sourceTree = "<group>"; };
+		CDDD0C19183246CD004D9FF0 /* LightningProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightningProjectile.m; sourceTree = "<group>"; };
+		CDDD0C1A183246CD004D9FF0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDDD0C1B183246CD004D9FF0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CDDD0C1C183246CD004D9FF0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CDDD0C1D183246CD004D9FF0 /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		CDDD0C1E183246CD004D9FF0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		CDDD0C1F183246CD004D9FF0 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		CDDD0C20183246CD004D9FF0 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		CDDD0C21183246CD004D9FF0 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		CDDD0C22183246CD004D9FF0 /* Playfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playfield.h; sourceTree = "<group>"; };
+		CDDD0C23183246CD004D9FF0 /* Playfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playfield.m; sourceTree = "<group>"; };
+		CDDD0C24183246CD004D9FF0 /* PowerProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerProjectile.h; sourceTree = "<group>"; };
+		CDDD0C25183246CD004D9FF0 /* PowerProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerProjectile.m; sourceTree = "<group>"; };
+		CDDD0C26183246CD004D9FF0 /* Projectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projectile.h; sourceTree = "<group>"; };
+		CDDD0C27183246CD004D9FF0 /* Projectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projectile.m; sourceTree = "<group>"; };
+		CDDD0C28183246CD004D9FF0 /* Super Defender-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Super Defender-Prefix.pch"; sourceTree = "<group>"; };
+		CDDD0C29183246CD004D9FF0 /* UnstoppableProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnstoppableProjectile.h; sourceTree = "<group>"; };
+		CDDD0C2A183246CD004D9FF0 /* UnstoppableProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnstoppableProjectile.m; sourceTree = "<group>"; };
+		CDDD0C2C183246CD004D9FF0 /* GameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
+		CDDD0C2D183246CD004D9FF0 /* Levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+		CDDD0C2E183246CD004D9FF0 /* Super Defender-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Super Defender-Info.plist"; sourceTree = "<group>"; };
+		CDDD0C32183246CD004D9FF0 /* iPhone Non-Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Non-Retina.png"; sourceTree = "<group>"; };
+		CDDD0C33183246CD004D9FF0 /* iPhone Retina (iOS 6 and Prior).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Retina (iOS 6 and Prior).png"; sourceTree = "<group>"; };
+		CDDD0C34183246CD004D9FF0 /* iPhone Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Retina.png"; sourceTree = "<group>"; };
+		CDDD0C35183246CD004D9FF0 /* SP_iPhone Non-Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SP_iPhone Non-Retina.png"; sourceTree = "<group>"; };
+		CDDD0C36183246CD004D9FF0 /* SP_iPhone Retina (iOS 6 and Prior).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SP_iPhone Retina (iOS 6 and Prior).png"; sourceTree = "<group>"; };
+		CDDD0C37183246CD004D9FF0 /* SP_iPhone Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SP_iPhone Retina.png"; sourceTree = "<group>"; };
+		CDDD0C39183246CD004D9FF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CDDD0C3A183246CD004D9FF0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CDDD0C3B183246CD004D9FF0 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		CDDD0C3D183246CD004D9FF0 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		CDDD0C3E183246CD004D9FF0 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		CDDD0C3F183246CD004D9FF0 /* 100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100.png; sourceTree = "<group>"; };
+		CDDD0C40183246CD004D9FF0 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		CDDD0C41183246CD004D9FF0 /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30.png; sourceTree = "<group>"; };
+		CDDD0C42183246CD004D9FF0 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		CDDD0C43183246CD004D9FF0 /* 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50.png; sourceTree = "<group>"; };
+		CDDD0C44183246CD004D9FF0 /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60.png; sourceTree = "<group>"; };
+		CDDD0C45183246CD004D9FF0 /* 70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 70.png; sourceTree = "<group>"; };
+		CDDD0C46183246CD004D9FF0 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		CDDD0C47183246CD004D9FF0 /* 90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 90.png; sourceTree = "<group>"; };
+		CDDD0C49183246CD004D9FF0 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		CDDD0C4A183246CD004D9FF0 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		CDDD0C4B183246CD004D9FF0 /* barrel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrel.png; sourceTree = "<group>"; };
+		CDDD0C4C183246CD004D9FF0 /* barrel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barrel@2x.png"; sourceTree = "<group>"; };
+		CDDD0C4D183246CD004D9FF0 /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
+		CDDD0C4E183246CD004D9FF0 /* base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "base@2x.png"; sourceTree = "<group>"; };
+		CDDD0C4F183246CD004D9FF0 /* BigExplosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigExplosion.png; sourceTree = "<group>"; };
+		CDDD0C50183246CD004D9FF0 /* DefenderHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefenderHeart.png; sourceTree = "<group>"; };
+		CDDD0C51183246CD004D9FF0 /* DefenderHeart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DefenderHeart@2x.png"; sourceTree = "<group>"; };
+		CDDD0C52183246CD004D9FF0 /* EasyEnemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EasyEnemy.png; sourceTree = "<group>"; };
+		CDDD0C53183246CD004D9FF0 /* EasyEnemy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EasyEnemy@2x.png"; sourceTree = "<group>"; };
+		CDDD0C54183246CD004D9FF0 /* Explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Explosion.png; sourceTree = "<group>"; };
+		CDDD0C55183246CD004D9FF0 /* HardEnemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HardEnemy.png; sourceTree = "<group>"; };
+		CDDD0C56183246CD004D9FF0 /* HardEnemy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HardEnemy@2x.png"; sourceTree = "<group>"; };
+		CDDD0C58183246CD004D9FF0 /* PdarkMatter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PdarkMatter.png; sourceTree = "<group>"; };
+		CDDD0C59183246CD004D9FF0 /* PmoveSpeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PmoveSpeed.png; sourceTree = "<group>"; };
+		CDDD0C5A183246CD004D9FF0 /* Ppower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ppower.png; sourceTree = "<group>"; };
+		CDDD0C5B183246CD004D9FF0 /* PrateOfFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrateOfFire.png; sourceTree = "<group>"; };
+		CDDD0C5C183246CD004D9FF0 /* Punstoppable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Punstoppable.png; sourceTree = "<group>"; };
+		CDDD0C5E183246CD004D9FF0 /* DarkMatterProjectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkMatterProjectile.png; sourceTree = "<group>"; };
+		CDDD0C5F183246CD004D9FF0 /* DarkMatterProjectile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkMatterProjectile@2x.png"; sourceTree = "<group>"; };
+		CDDD0C60183246CD004D9FF0 /* EnemyProjectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyProjectile.png; sourceTree = "<group>"; };
+		CDDD0C61183246CD004D9FF0 /* EnemyProjectile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EnemyProjectile@2x.png"; sourceTree = "<group>"; };
+		CDDD0C62183246CD004D9FF0 /* FrequentProjectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FrequentProjectile.png; sourceTree = "<group>"; };
+		CDDD0C63183246CD004D9FF0 /* FrequentProjectile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FrequentProjectile@2x.png"; sourceTree = "<group>"; };
+		CDDD0C64183246CD004D9FF0 /* LightningProjectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightningProjectile.png; sourceTree = "<group>"; };
+		CDDD0C65183246CD004D9FF0 /* LightningProjectile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightningProjectile@2x.png"; sourceTree = "<group>"; };
+		CDDD0C66183246CD004D9FF0 /* NormalProjectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NormalProjectile.png; sourceTree = "<group>"; };
+		CDDD0C67183246CD004D9FF0 /* NormalProjectile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NormalProjectile@2x.png"; sourceTree = "<group>"; };
+		CDDD0C68183246CD004D9FF0 /* PowerProjectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowerProjectile.png; sourceTree = "<group>"; };
+		CDDD0C69183246CD004D9FF0 /* PowerProjectile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerProjectile@2x.png"; sourceTree = "<group>"; };
+		CDDD0C6A183246CD004D9FF0 /* UnstoppableProjectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnstoppableProjectile.png; sourceTree = "<group>"; };
+		CDDD0C6B183246CD004D9FF0 /* UnstoppableProjectile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnstoppableProjectile@2x.png"; sourceTree = "<group>"; };
+		CDDD0C6D183246CD004D9FF0 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		CDDD0C6E183246CD004D9FF0 /* pauzebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauzebutton.png; sourceTree = "<group>"; };
+		CDDD0C6F183246CD004D9FF0 /* pauzebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pauzebutton@2x.png"; sourceTree = "<group>"; };
+		CDDD0C70183246CD004D9FF0 /* ProjectileScherm_v1_leeg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProjectileScherm_v1_leeg.png; sourceTree = "<group>"; };
+		CDDD0C71183246CD004D9FF0 /* UpgradeScherm_v1_leeg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpgradeScherm_v1_leeg.png; sourceTree = "<group>"; };
+		CDDD0C73183246CD004D9FF0 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
+		CDDD0C74183246CD004D9FF0 /* moveSpeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moveSpeed.png; sourceTree = "<group>"; };
+		CDDD0C75183246CD004D9FF0 /* power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = power.png; sourceTree = "<group>"; };
+		CDDD0C76183246CD004D9FF0 /* rateOfFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rateOfFire.png; sourceTree = "<group>"; };
+		CDDD0C77183246CD004D9FF0 /* rotSpeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotSpeed.png; sourceTree = "<group>"; };
+		CDDD0C7A183246CD004D9FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC8DD03C180C0A8200857A2D /* Super Defender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super Defender.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8DD03F180C0A8200857A2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC8DD041180C0A8200857A2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,10 +232,221 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDDD0C01183246CD004D9FF0 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C02183246CD004D9FF0 /* AppDelegate.h */,
+				CDDD0C03183246CD004D9FF0 /* AppDelegate.m */,
+				CDDD0C04183246CD004D9FF0 /* Cannon.h */,
+				CDDD0C05183246CD004D9FF0 /* Cannon.m */,
+				CDDD0C06183246CD004D9FF0 /* DarkMatterProjectile.h */,
+				CDDD0C07183246CD004D9FF0 /* DarkMatterProjectile.m */,
+				CDDD0C08183246CD004D9FF0 /* DefaultProjectile.h */,
+				CDDD0C09183246CD004D9FF0 /* DefaultProjectile.m */,
+				CDDD0C0A183246CD004D9FF0 /* Enemy.h */,
+				CDDD0C0B183246CD004D9FF0 /* Enemy.m */,
+				CDDD0C0C183246CD004D9FF0 /* Enemy1.h */,
+				CDDD0C0D183246CD004D9FF0 /* Enemy1.m */,
+				CDDD0C0E183246CD004D9FF0 /* Enemy2.h */,
+				CDDD0C0F183246CD004D9FF0 /* Enemy2.m */,
+				CDDD0C10183246CD004D9FF0 /* EnemyProjectile.h */,
+				CDDD0C11183246CD004D9FF0 /* EnemyProjectile.m */,
+				CDDD0C12183246CD004D9FF0 /* FrequentProjectile.h */,
+				CDDD0C13183246CD004D9FF0 /* FrequentProjectile.m */,
+				CDDD0C14183246CD004D9FF0 /* GameData.h */,
+				CDDD0C15183246CD004D9FF0 /* GameData.m */,
+				CDDD0C16183246CD004D9FF0 /* Heart.h */,
+				CDDD0C17183246CD004D9FF0 /* Heart.m */,
+				CDDD0C18183246CD004D9FF0 /* LightningProjectile.h */,
+				CDDD0C19183246CD004D9FF0 /* LightningProjectile.m */,
+				CDDD0C1A183246CD004D9FF0 /* main.m */,
+				CDDD0C1B183246CD004D9FF0 /* MainViewController.h */,
+				CDDD0C1C183246CD004D9FF0 /* MainViewController.m */,
+				CDDD0C1D183246CD004D9FF0 /* MenuView.xib */,
+				CDDD0C1E183246CD004D9FF0 /* MenuViewController.h */,
+				CDDD0C1F183246CD004D9FF0 /* MenuViewController.m */,
+				CDDD0C20183246CD004D9FF0 /* Object.h */,
+				CDDD0C21183246CD004D9FF0 /* Object.m */,
+				CDDD0C22183246CD004D9FF0 /* Playfield.h */,
+				CDDD0C23183246CD004D9FF0 /* Playfield.m */,
+				CDDD0C24183246CD004D9FF0 /* PowerProjectile.h */,
+				CDDD0C25183246CD004D9FF0 /* PowerProjectile.m */,
+				CDDD0C26183246CD004D9FF0 /* Projectile.h */,
+				CDDD0C27183246CD004D9FF0 /* Projectile.m */,
+				CDDD0C28183246CD004D9FF0 /* Super Defender-Prefix.pch */,
+				CDDD0C29183246CD004D9FF0 /* UnstoppableProjectile.h */,
+				CDDD0C2A183246CD004D9FF0 /* UnstoppableProjectile.m */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		CDDD0C2B183246CD004D9FF0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C2C183246CD004D9FF0 /* GameData.plist */,
+				CDDD0C2D183246CD004D9FF0 /* Levels.plist */,
+				CDDD0C2E183246CD004D9FF0 /* Super Defender-Info.plist */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CDDD0C2F183246CD004D9FF0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C30183246CD004D9FF0 /* app */,
+				CDDD0C3C183246CD004D9FF0 /* healthbars */,
+				CDDD0C48183246CD004D9FF0 /* ingame */,
+				CDDD0C57183246CD004D9FF0 /* projectileButtons */,
+				CDDD0C5D183246CD004D9FF0 /* projectiles */,
+				CDDD0C6C183246CD004D9FF0 /* ui */,
+				CDDD0C72183246CD004D9FF0 /* upgradeButtons */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CDDD0C30183246CD004D9FF0 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C31183246CD004D9FF0 /* icons */,
+				CDDD0C38183246CD004D9FF0 /* launch */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		CDDD0C31183246CD004D9FF0 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C32183246CD004D9FF0 /* iPhone Non-Retina.png */,
+				CDDD0C33183246CD004D9FF0 /* iPhone Retina (iOS 6 and Prior).png */,
+				CDDD0C34183246CD004D9FF0 /* iPhone Retina.png */,
+				CDDD0C35183246CD004D9FF0 /* SP_iPhone Non-Retina.png */,
+				CDDD0C36183246CD004D9FF0 /* SP_iPhone Retina (iOS 6 and Prior).png */,
+				CDDD0C37183246CD004D9FF0 /* SP_iPhone Retina.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		CDDD0C38183246CD004D9FF0 /* launch */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C39183246CD004D9FF0 /* Default-568h@2x.png */,
+				CDDD0C3A183246CD004D9FF0 /* Default.png */,
+				CDDD0C3B183246CD004D9FF0 /* Default~iphone.png */,
+			);
+			path = launch;
+			sourceTree = "<group>";
+		};
+		CDDD0C3C183246CD004D9FF0 /* healthbars */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C3D183246CD004D9FF0 /* 0.png */,
+				CDDD0C3E183246CD004D9FF0 /* 10.png */,
+				CDDD0C3F183246CD004D9FF0 /* 100.png */,
+				CDDD0C40183246CD004D9FF0 /* 20.png */,
+				CDDD0C41183246CD004D9FF0 /* 30.png */,
+				CDDD0C42183246CD004D9FF0 /* 40.png */,
+				CDDD0C43183246CD004D9FF0 /* 50.png */,
+				CDDD0C44183246CD004D9FF0 /* 60.png */,
+				CDDD0C45183246CD004D9FF0 /* 70.png */,
+				CDDD0C46183246CD004D9FF0 /* 80.png */,
+				CDDD0C47183246CD004D9FF0 /* 90.png */,
+			);
+			path = healthbars;
+			sourceTree = "<group>";
+		};
+		CDDD0C48183246CD004D9FF0 /* ingame */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C49183246CD004D9FF0 /* background.png */,
+				CDDD0C4A183246CD004D9FF0 /* background@2x.png */,
+				CDDD0C4B183246CD004D9FF0 /* barrel.png */,
+				CDDD0C4C183246CD004D9FF0 /* barrel@2x.png */,
+				CDDD0C4D183246CD004D9FF0 /* base.png */,
+				CDDD0C4E183246CD004D9FF0 /* base@2x.png */,
+				CDDD0C4F183246CD004D9FF0 /* BigExplosion.png */,
+				CDDD0C50183246CD004D9FF0 /* DefenderHeart.png */,
+				CDDD0C51183246CD004D9FF0 /* DefenderHeart@2x.png */,
+				CDDD0C52183246CD004D9FF0 /* EasyEnemy.png */,
+				CDDD0C53183246CD004D9FF0 /* EasyEnemy@2x.png */,
+				CDDD0C54183246CD004D9FF0 /* Explosion.png */,
+				CDDD0C55183246CD004D9FF0 /* HardEnemy.png */,
+				CDDD0C56183246CD004D9FF0 /* HardEnemy@2x.png */,
+			);
+			path = ingame;
+			sourceTree = "<group>";
+		};
+		CDDD0C57183246CD004D9FF0 /* projectileButtons */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C58183246CD004D9FF0 /* PdarkMatter.png */,
+				CDDD0C59183246CD004D9FF0 /* PmoveSpeed.png */,
+				CDDD0C5A183246CD004D9FF0 /* Ppower.png */,
+				CDDD0C5B183246CD004D9FF0 /* PrateOfFire.png */,
+				CDDD0C5C183246CD004D9FF0 /* Punstoppable.png */,
+			);
+			path = projectileButtons;
+			sourceTree = "<group>";
+		};
+		CDDD0C5D183246CD004D9FF0 /* projectiles */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C5E183246CD004D9FF0 /* DarkMatterProjectile.png */,
+				CDDD0C5F183246CD004D9FF0 /* DarkMatterProjectile@2x.png */,
+				CDDD0C60183246CD004D9FF0 /* EnemyProjectile.png */,
+				CDDD0C61183246CD004D9FF0 /* EnemyProjectile@2x.png */,
+				CDDD0C62183246CD004D9FF0 /* FrequentProjectile.png */,
+				CDDD0C63183246CD004D9FF0 /* FrequentProjectile@2x.png */,
+				CDDD0C64183246CD004D9FF0 /* LightningProjectile.png */,
+				CDDD0C65183246CD004D9FF0 /* LightningProjectile@2x.png */,
+				CDDD0C66183246CD004D9FF0 /* NormalProjectile.png */,
+				CDDD0C67183246CD004D9FF0 /* NormalProjectile@2x.png */,
+				CDDD0C68183246CD004D9FF0 /* PowerProjectile.png */,
+				CDDD0C69183246CD004D9FF0 /* PowerProjectile@2x.png */,
+				CDDD0C6A183246CD004D9FF0 /* UnstoppableProjectile.png */,
+				CDDD0C6B183246CD004D9FF0 /* UnstoppableProjectile@2x.png */,
+			);
+			path = projectiles;
+			sourceTree = "<group>";
+		};
+		CDDD0C6C183246CD004D9FF0 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C6D183246CD004D9FF0 /* menu.png */,
+				CDDD0C6E183246CD004D9FF0 /* pauzebutton.png */,
+				CDDD0C6F183246CD004D9FF0 /* pauzebutton@2x.png */,
+				CDDD0C70183246CD004D9FF0 /* ProjectileScherm_v1_leeg.png */,
+				CDDD0C71183246CD004D9FF0 /* UpgradeScherm_v1_leeg.png */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		CDDD0C72183246CD004D9FF0 /* upgradeButtons */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C73183246CD004D9FF0 /* health.png */,
+				CDDD0C74183246CD004D9FF0 /* moveSpeed.png */,
+				CDDD0C75183246CD004D9FF0 /* power.png */,
+				CDDD0C76183246CD004D9FF0 /* rateOfFire.png */,
+				CDDD0C77183246CD004D9FF0 /* rotSpeed.png */,
+			);
+			path = upgradeButtons;
+			sourceTree = "<group>";
+		};
+		CDDD0C78183246CD004D9FF0 /* languages */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C79183246CD004D9FF0 /* InfoPlist.strings */,
+			);
+			path = languages;
+			sourceTree = "<group>";
+		};
 		DC8DD033180C0A8200857A2D = {
 			isa = PBXGroup;
 			children = (
-				DC8DD045180C0A8200857A2D /* Super Defender */,
+				CDDD0C01183246CD004D9FF0 /* code */,
+				CDDD0C2B183246CD004D9FF0 /* data */,
+				CDDD0C2F183246CD004D9FF0 /* images */,
+				CDDD0C78183246CD004D9FF0 /* languages */,
 				DC8DD03E180C0A8200857A2D /* Frameworks */,
 				DC8DD03D180C0A8200857A2D /* Products */,
 			);
@@ -62,21 +469,6 @@
 				DC8DD043180C0A8200857A2D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC8DD045180C0A8200857A2D /* Super Defender */ = {
-			isa = PBXGroup;
-			children = (
-				DC8DD046180C0A8200857A2D /* Supporting Files */,
-			);
-			path = "Super Defender";
-			sourceTree = "<group>";
-		};
-		DC8DD046180C0A8200857A2D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +527,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDD0CC8183246CD004D9FF0 /* menu.png in Resources */,
+				CDDD0C93183246CD004D9FF0 /* iPhone Non-Retina.png in Resources */,
+				CDDD0CBB183246CD004D9FF0 /* DarkMatterProjectile@2x.png in Resources */,
+				CDDD0CB6183246CD004D9FF0 /* PmoveSpeed.png in Resources */,
+				CDDD0C99183246CD004D9FF0 /* Default-568h@2x.png in Resources */,
+				CDDD0CD2183246CD004D9FF0 /* InfoPlist.strings in Resources */,
+				CDDD0CBE183246CD004D9FF0 /* FrequentProjectile.png in Resources */,
+				CDDD0C92183246CD004D9FF0 /* Super Defender-Info.plist in Resources */,
+				CDDD0C90183246CD004D9FF0 /* GameData.plist in Resources */,
+				CDDD0CCA183246CD004D9FF0 /* pauzebutton@2x.png in Resources */,
+				CDDD0CA0183246CD004D9FF0 /* 30.png in Resources */,
+				CDDD0CC3183246CD004D9FF0 /* NormalProjectile@2x.png in Resources */,
+				CDDD0CC7183246CD004D9FF0 /* UnstoppableProjectile@2x.png in Resources */,
+				CDDD0CCC183246CD004D9FF0 /* UpgradeScherm_v1_leeg.png in Resources */,
+				CDDD0C9B183246CD004D9FF0 /* Default~iphone.png in Resources */,
+				CDDD0CA8183246CD004D9FF0 /* background@2x.png in Resources */,
+				CDDD0CCB183246CD004D9FF0 /* ProjectileScherm_v1_leeg.png in Resources */,
+				CDDD0CA7183246CD004D9FF0 /* background.png in Resources */,
+				CDDD0CA5183246CD004D9FF0 /* 80.png in Resources */,
+				CDDD0C9D183246CD004D9FF0 /* 10.png in Resources */,
+				CDDD0CBA183246CD004D9FF0 /* DarkMatterProjectile.png in Resources */,
+				CDDD0CC5183246CD004D9FF0 /* PowerProjectile@2x.png in Resources */,
+				CDDD0CC1183246CD004D9FF0 /* LightningProjectile@2x.png in Resources */,
+				CDDD0C96183246CD004D9FF0 /* SP_iPhone Non-Retina.png in Resources */,
+				CDDD0CA4183246CD004D9FF0 /* 70.png in Resources */,
+				CDDD0CD0183246CD004D9FF0 /* rateOfFire.png in Resources */,
+				CDDD0CC4183246CD004D9FF0 /* PowerProjectile.png in Resources */,
+				CDDD0CC9183246CD004D9FF0 /* pauzebutton.png in Resources */,
+				CDDD0CB5183246CD004D9FF0 /* PdarkMatter.png in Resources */,
+				CDDD0CA6183246CD004D9FF0 /* 90.png in Resources */,
+				CDDD0C94183246CD004D9FF0 /* iPhone Retina (iOS 6 and Prior).png in Resources */,
+				CDDD0CAD183246CD004D9FF0 /* BigExplosion.png in Resources */,
+				CDDD0CAA183246CD004D9FF0 /* barrel@2x.png in Resources */,
+				CDDD0CAB183246CD004D9FF0 /* base.png in Resources */,
+				CDDD0CC6183246CD004D9FF0 /* UnstoppableProjectile.png in Resources */,
+				CDDD0CBC183246CD004D9FF0 /* EnemyProjectile.png in Resources */,
+				CDDD0CC0183246CD004D9FF0 /* LightningProjectile.png in Resources */,
+				CDDD0CB8183246CD004D9FF0 /* PrateOfFire.png in Resources */,
+				CDDD0CB2183246CD004D9FF0 /* Explosion.png in Resources */,
+				CDDD0C98183246CD004D9FF0 /* SP_iPhone Retina.png in Resources */,
+				CDDD0CB1183246CD004D9FF0 /* EasyEnemy@2x.png in Resources */,
+				CDDD0CB4183246CD004D9FF0 /* HardEnemy@2x.png in Resources */,
+				CDDD0CCE183246CD004D9FF0 /* moveSpeed.png in Resources */,
+				CDDD0CA3183246CD004D9FF0 /* 60.png in Resources */,
+				CDDD0CB3183246CD004D9FF0 /* HardEnemy.png in Resources */,
+				CDDD0CA2183246CD004D9FF0 /* 50.png in Resources */,
+				CDDD0CAC183246CD004D9FF0 /* base@2x.png in Resources */,
+				CDDD0CAE183246CD004D9FF0 /* DefenderHeart.png in Resources */,
+				CDDD0CBD183246CD004D9FF0 /* EnemyProjectile@2x.png in Resources */,
+				CDDD0CB9183246CD004D9FF0 /* Punstoppable.png in Resources */,
+				CDDD0C9A183246CD004D9FF0 /* Default.png in Resources */,
+				CDDD0C9F183246CD004D9FF0 /* 20.png in Resources */,
+				CDDD0C89183246CD004D9FF0 /* MenuView.xib in Resources */,
+				CDDD0CA9183246CD004D9FF0 /* barrel.png in Resources */,
+				CDDD0CA1183246CD004D9FF0 /* 40.png in Resources */,
+				CDDD0C9E183246CD004D9FF0 /* 100.png in Resources */,
+				CDDD0CB7183246CD004D9FF0 /* Ppower.png in Resources */,
+				CDDD0C9C183246CD004D9FF0 /* 0.png in Resources */,
+				CDDD0CC2183246CD004D9FF0 /* NormalProjectile.png in Resources */,
+				CDDD0C91183246CD004D9FF0 /* Levels.plist in Resources */,
+				CDDD0C97183246CD004D9FF0 /* SP_iPhone Retina (iOS 6 and Prior).png in Resources */,
+				CDDD0CD1183246CD004D9FF0 /* rotSpeed.png in Resources */,
+				CDDD0CAF183246CD004D9FF0 /* DefenderHeart@2x.png in Resources */,
+				CDDD0CB0183246CD004D9FF0 /* EasyEnemy.png in Resources */,
+				CDDD0CCF183246CD004D9FF0 /* power.png in Resources */,
+				CDDD0CBF183246CD004D9FF0 /* FrequentProjectile@2x.png in Resources */,
+				CDDD0CCD183246CD004D9FF0 /* health.png in Resources */,
+				CDDD0C95183246CD004D9FF0 /* iPhone Retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +605,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDD0C87183246CD004D9FF0 /* main.m in Sources */,
+				CDDD0C81183246CD004D9FF0 /* Enemy2.m in Sources */,
+				CDDD0C84183246CD004D9FF0 /* GameData.m in Sources */,
+				CDDD0C83183246CD004D9FF0 /* FrequentProjectile.m in Sources */,
+				CDDD0C8A183246CD004D9FF0 /* MenuViewController.m in Sources */,
+				CDDD0C7E183246CD004D9FF0 /* DefaultProjectile.m in Sources */,
+				CDDD0C7F183246CD004D9FF0 /* Enemy.m in Sources */,
+				CDDD0C82183246CD004D9FF0 /* EnemyProjectile.m in Sources */,
+				CDDD0C80183246CD004D9FF0 /* Enemy1.m in Sources */,
+				CDDD0C8E183246CD004D9FF0 /* Projectile.m in Sources */,
+				CDDD0C7D183246CD004D9FF0 /* DarkMatterProjectile.m in Sources */,
+				CDDD0C8B183246CD004D9FF0 /* Object.m in Sources */,
+				CDDD0C8F183246CD004D9FF0 /* UnstoppableProjectile.m in Sources */,
+				CDDD0C8C183246CD004D9FF0 /* Playfield.m in Sources */,
+				CDDD0C7C183246CD004D9FF0 /* Cannon.m in Sources */,
+				CDDD0C86183246CD004D9FF0 /* LightningProjectile.m in Sources */,
+				CDDD0C8D183246CD004D9FF0 /* PowerProjectile.m in Sources */,
+				CDDD0C88183246CD004D9FF0 /* MainViewController.m in Sources */,
+				CDDD0C85183246CD004D9FF0 /* Heart.m in Sources */,
+				CDDD0C7B183246CD004D9FF0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDDD0C79183246CD004D9FF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDD0C7A183246CD004D9FF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DC8DD057180C0A8200857A2D /* Debug */ = {
