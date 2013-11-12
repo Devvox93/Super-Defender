@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		829EA93E18166847006341B8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829EA93D18166847006341B8 /* CoreMotion.framework */; };
+		CDB71E4518324FF7007D2945 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDB71E4418324FF7007D2945 /* MenuViewController.xib */; };
+		CDB71E4918325043007D2945 /* ProjectileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB71E4718325043007D2945 /* ProjectileViewController.m */; };
+		CDB71E4A18325043007D2945 /* ProjectileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDB71E4818325043007D2945 /* ProjectileViewController.xib */; };
+		CDB71E4E18325056007D2945 /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB71E4C18325056007D2945 /* UpgradeViewController.m */; };
+		CDB71E4F18325056007D2945 /* UpgradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDB71E4D18325056007D2945 /* UpgradeViewController.xib */; };
+		CDB71E5318325064007D2945 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB71E5118325064007D2945 /* PhotoViewController.m */; };
+		CDB71E5418325064007D2945 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDB71E5218325064007D2945 /* PhotoViewController.xib */; };
 		CDDD0C7B183246CD004D9FF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C03183246CD004D9FF0 /* AppDelegate.m */; };
 		CDDD0C7C183246CD004D9FF0 /* Cannon.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C05183246CD004D9FF0 /* Cannon.m */; };
 		CDDD0C7D183246CD004D9FF0 /* DarkMatterProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C07183246CD004D9FF0 /* DarkMatterProjectile.m */; };
@@ -22,7 +29,6 @@
 		CDDD0C86183246CD004D9FF0 /* LightningProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C19183246CD004D9FF0 /* LightningProjectile.m */; };
 		CDDD0C87183246CD004D9FF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C1A183246CD004D9FF0 /* main.m */; };
 		CDDD0C88183246CD004D9FF0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C1C183246CD004D9FF0 /* MainViewController.m */; };
-		CDDD0C89183246CD004D9FF0 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDDD0C1D183246CD004D9FF0 /* MenuView.xib */; };
 		CDDD0C8A183246CD004D9FF0 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C1F183246CD004D9FF0 /* MenuViewController.m */; };
 		CDDD0C8B183246CD004D9FF0 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C21183246CD004D9FF0 /* Object.m */; };
 		CDDD0C8C183246CD004D9FF0 /* Playfield.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDD0C23183246CD004D9FF0 /* Playfield.m */; };
@@ -103,6 +109,16 @@
 
 /* Begin PBXFileReference section */
 		829EA93D18166847006341B8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CDB71E4418324FF7007D2945 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		CDB71E4618325043007D2945 /* ProjectileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileViewController.h; sourceTree = "<group>"; };
+		CDB71E4718325043007D2945 /* ProjectileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectileViewController.m; sourceTree = "<group>"; };
+		CDB71E4818325043007D2945 /* ProjectileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectileViewController.xib; sourceTree = "<group>"; };
+		CDB71E4B18325056007D2945 /* UpgradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeViewController.h; sourceTree = "<group>"; };
+		CDB71E4C18325056007D2945 /* UpgradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeViewController.m; sourceTree = "<group>"; };
+		CDB71E4D18325056007D2945 /* UpgradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpgradeViewController.xib; sourceTree = "<group>"; };
+		CDB71E5018325064007D2945 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		CDB71E5118325064007D2945 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		CDB71E5218325064007D2945 /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
 		CDDD0C02183246CD004D9FF0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDDD0C03183246CD004D9FF0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDDD0C04183246CD004D9FF0 /* Cannon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cannon.h; sourceTree = "<group>"; };
@@ -130,7 +146,6 @@
 		CDDD0C1A183246CD004D9FF0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDDD0C1B183246CD004D9FF0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		CDDD0C1C183246CD004D9FF0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		CDDD0C1D183246CD004D9FF0 /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		CDDD0C1E183246CD004D9FF0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		CDDD0C1F183246CD004D9FF0 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CDDD0C20183246CD004D9FF0 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
@@ -235,46 +250,11 @@
 		CDDD0C01183246CD004D9FF0 /* code */ = {
 			isa = PBXGroup;
 			children = (
-				CDDD0C02183246CD004D9FF0 /* AppDelegate.h */,
-				CDDD0C03183246CD004D9FF0 /* AppDelegate.m */,
-				CDDD0C04183246CD004D9FF0 /* Cannon.h */,
-				CDDD0C05183246CD004D9FF0 /* Cannon.m */,
-				CDDD0C06183246CD004D9FF0 /* DarkMatterProjectile.h */,
-				CDDD0C07183246CD004D9FF0 /* DarkMatterProjectile.m */,
-				CDDD0C08183246CD004D9FF0 /* DefaultProjectile.h */,
-				CDDD0C09183246CD004D9FF0 /* DefaultProjectile.m */,
-				CDDD0C0A183246CD004D9FF0 /* Enemy.h */,
-				CDDD0C0B183246CD004D9FF0 /* Enemy.m */,
-				CDDD0C0C183246CD004D9FF0 /* Enemy1.h */,
-				CDDD0C0D183246CD004D9FF0 /* Enemy1.m */,
-				CDDD0C0E183246CD004D9FF0 /* Enemy2.h */,
-				CDDD0C0F183246CD004D9FF0 /* Enemy2.m */,
-				CDDD0C10183246CD004D9FF0 /* EnemyProjectile.h */,
-				CDDD0C11183246CD004D9FF0 /* EnemyProjectile.m */,
-				CDDD0C12183246CD004D9FF0 /* FrequentProjectile.h */,
-				CDDD0C13183246CD004D9FF0 /* FrequentProjectile.m */,
-				CDDD0C14183246CD004D9FF0 /* GameData.h */,
-				CDDD0C15183246CD004D9FF0 /* GameData.m */,
-				CDDD0C16183246CD004D9FF0 /* Heart.h */,
-				CDDD0C17183246CD004D9FF0 /* Heart.m */,
-				CDDD0C18183246CD004D9FF0 /* LightningProjectile.h */,
-				CDDD0C19183246CD004D9FF0 /* LightningProjectile.m */,
-				CDDD0C1A183246CD004D9FF0 /* main.m */,
-				CDDD0C1B183246CD004D9FF0 /* MainViewController.h */,
-				CDDD0C1C183246CD004D9FF0 /* MainViewController.m */,
-				CDDD0C1D183246CD004D9FF0 /* MenuView.xib */,
-				CDDD0C1E183246CD004D9FF0 /* MenuViewController.h */,
-				CDDD0C1F183246CD004D9FF0 /* MenuViewController.m */,
-				CDDD0C20183246CD004D9FF0 /* Object.h */,
-				CDDD0C21183246CD004D9FF0 /* Object.m */,
-				CDDD0C22183246CD004D9FF0 /* Playfield.h */,
-				CDDD0C23183246CD004D9FF0 /* Playfield.m */,
-				CDDD0C24183246CD004D9FF0 /* PowerProjectile.h */,
-				CDDD0C25183246CD004D9FF0 /* PowerProjectile.m */,
-				CDDD0C26183246CD004D9FF0 /* Projectile.h */,
-				CDDD0C27183246CD004D9FF0 /* Projectile.m */,
-				CDDD0C29183246CD004D9FF0 /* UnstoppableProjectile.h */,
-				CDDD0C2A183246CD004D9FF0 /* UnstoppableProjectile.m */,
+				CDDD0CD718324B7A004D9FF0 /* objects */,
+				CDDD0CD618324B5A004D9FF0 /* main */,
+				CDDD0CD518324B2E004D9FF0 /* viewcontrollers */,
+				CDDD0CD418324AE7004D9FF0 /* enemies */,
+				CDDD0CD318324AAA004D9FF0 /* projectiles */,
 			);
 			path = code;
 			sourceTree = "<group>";
@@ -440,6 +420,90 @@
 			path = languages;
 			sourceTree = "<group>";
 		};
+		CDDD0CD318324AAA004D9FF0 /* projectiles */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C08183246CD004D9FF0 /* DefaultProjectile.h */,
+				CDDD0C09183246CD004D9FF0 /* DefaultProjectile.m */,
+				CDDD0C06183246CD004D9FF0 /* DarkMatterProjectile.h */,
+				CDDD0C07183246CD004D9FF0 /* DarkMatterProjectile.m */,
+				CDDD0C10183246CD004D9FF0 /* EnemyProjectile.h */,
+				CDDD0C11183246CD004D9FF0 /* EnemyProjectile.m */,
+				CDDD0C12183246CD004D9FF0 /* FrequentProjectile.h */,
+				CDDD0C13183246CD004D9FF0 /* FrequentProjectile.m */,
+				CDDD0C18183246CD004D9FF0 /* LightningProjectile.h */,
+				CDDD0C19183246CD004D9FF0 /* LightningProjectile.m */,
+				CDDD0C24183246CD004D9FF0 /* PowerProjectile.h */,
+				CDDD0C25183246CD004D9FF0 /* PowerProjectile.m */,
+				CDDD0C26183246CD004D9FF0 /* Projectile.h */,
+				CDDD0C27183246CD004D9FF0 /* Projectile.m */,
+				CDDD0C29183246CD004D9FF0 /* UnstoppableProjectile.h */,
+				CDDD0C2A183246CD004D9FF0 /* UnstoppableProjectile.m */,
+			);
+			name = projectiles;
+			sourceTree = "<group>";
+		};
+		CDDD0CD418324AE7004D9FF0 /* enemies */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C0A183246CD004D9FF0 /* Enemy.h */,
+				CDDD0C0B183246CD004D9FF0 /* Enemy.m */,
+				CDDD0C0C183246CD004D9FF0 /* Enemy1.h */,
+				CDDD0C0D183246CD004D9FF0 /* Enemy1.m */,
+				CDDD0C0E183246CD004D9FF0 /* Enemy2.h */,
+				CDDD0C0F183246CD004D9FF0 /* Enemy2.m */,
+			);
+			name = enemies;
+			sourceTree = "<group>";
+		};
+		CDDD0CD518324B2E004D9FF0 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C1B183246CD004D9FF0 /* MainViewController.h */,
+				CDDD0C1C183246CD004D9FF0 /* MainViewController.m */,
+				CDDD0C1E183246CD004D9FF0 /* MenuViewController.h */,
+				CDDD0C1F183246CD004D9FF0 /* MenuViewController.m */,
+				CDB71E4418324FF7007D2945 /* MenuViewController.xib */,
+				CDB71E4618325043007D2945 /* ProjectileViewController.h */,
+				CDB71E4718325043007D2945 /* ProjectileViewController.m */,
+				CDB71E4818325043007D2945 /* ProjectileViewController.xib */,
+				CDB71E4B18325056007D2945 /* UpgradeViewController.h */,
+				CDB71E4C18325056007D2945 /* UpgradeViewController.m */,
+				CDB71E4D18325056007D2945 /* UpgradeViewController.xib */,
+				CDB71E5018325064007D2945 /* PhotoViewController.h */,
+				CDB71E5118325064007D2945 /* PhotoViewController.m */,
+				CDB71E5218325064007D2945 /* PhotoViewController.xib */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		CDDD0CD618324B5A004D9FF0 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C02183246CD004D9FF0 /* AppDelegate.h */,
+				CDDD0C03183246CD004D9FF0 /* AppDelegate.m */,
+				CDDD0C14183246CD004D9FF0 /* GameData.h */,
+				CDDD0C15183246CD004D9FF0 /* GameData.m */,
+				CDDD0C22183246CD004D9FF0 /* Playfield.h */,
+				CDDD0C23183246CD004D9FF0 /* Playfield.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		CDDD0CD718324B7A004D9FF0 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				CDDD0C04183246CD004D9FF0 /* Cannon.h */,
+				CDDD0C05183246CD004D9FF0 /* Cannon.m */,
+				CDDD0C16183246CD004D9FF0 /* Heart.h */,
+				CDDD0C17183246CD004D9FF0 /* Heart.m */,
+				CDDD0C1A183246CD004D9FF0 /* main.m */,
+				CDDD0C20183246CD004D9FF0 /* Object.h */,
+				CDDD0C21183246CD004D9FF0 /* Object.m */,
+			);
+			name = objects;
+			sourceTree = "<group>";
+		};
 		DC8DD033180C0A8200857A2D = {
 			isa = PBXGroup;
 			children = (
@@ -529,13 +593,16 @@
 			files = (
 				CDDD0CC8183246CD004D9FF0 /* menu.png in Resources */,
 				CDDD0C93183246CD004D9FF0 /* iPhone Non-Retina.png in Resources */,
+				CDB71E4F18325056007D2945 /* UpgradeViewController.xib in Resources */,
 				CDDD0CBB183246CD004D9FF0 /* DarkMatterProjectile@2x.png in Resources */,
 				CDDD0CB6183246CD004D9FF0 /* PmoveSpeed.png in Resources */,
 				CDDD0C99183246CD004D9FF0 /* Default-568h@2x.png in Resources */,
 				CDDD0CD2183246CD004D9FF0 /* InfoPlist.strings in Resources */,
 				CDDD0CBE183246CD004D9FF0 /* FrequentProjectile.png in Resources */,
 				CDDD0C92183246CD004D9FF0 /* Super Defender-Info.plist in Resources */,
+				CDB71E5418325064007D2945 /* PhotoViewController.xib in Resources */,
 				CDDD0C90183246CD004D9FF0 /* GameData.plist in Resources */,
+				CDB71E4A18325043007D2945 /* ProjectileViewController.xib in Resources */,
 				CDDD0CCA183246CD004D9FF0 /* pauzebutton@2x.png in Resources */,
 				CDDD0CA0183246CD004D9FF0 /* 30.png in Resources */,
 				CDDD0CC3183246CD004D9FF0 /* NormalProjectile@2x.png in Resources */,
@@ -552,6 +619,7 @@
 				CDDD0CC1183246CD004D9FF0 /* LightningProjectile@2x.png in Resources */,
 				CDDD0C96183246CD004D9FF0 /* SP_iPhone Non-Retina.png in Resources */,
 				CDDD0CA4183246CD004D9FF0 /* 70.png in Resources */,
+				CDB71E4518324FF7007D2945 /* MenuViewController.xib in Resources */,
 				CDDD0CD0183246CD004D9FF0 /* rateOfFire.png in Resources */,
 				CDDD0CC4183246CD004D9FF0 /* PowerProjectile.png in Resources */,
 				CDDD0CC9183246CD004D9FF0 /* pauzebutton.png in Resources */,
@@ -579,7 +647,6 @@
 				CDDD0CB9183246CD004D9FF0 /* Punstoppable.png in Resources */,
 				CDDD0C9A183246CD004D9FF0 /* Default.png in Resources */,
 				CDDD0C9F183246CD004D9FF0 /* 20.png in Resources */,
-				CDDD0C89183246CD004D9FF0 /* MenuView.xib in Resources */,
 				CDDD0CA9183246CD004D9FF0 /* barrel.png in Resources */,
 				CDDD0CA1183246CD004D9FF0 /* 40.png in Resources */,
 				CDDD0C9E183246CD004D9FF0 /* 100.png in Resources */,
@@ -610,13 +677,16 @@
 				CDDD0C84183246CD004D9FF0 /* GameData.m in Sources */,
 				CDDD0C83183246CD004D9FF0 /* FrequentProjectile.m in Sources */,
 				CDDD0C8A183246CD004D9FF0 /* MenuViewController.m in Sources */,
+				CDB71E4E18325056007D2945 /* UpgradeViewController.m in Sources */,
 				CDDD0C7E183246CD004D9FF0 /* DefaultProjectile.m in Sources */,
 				CDDD0C7F183246CD004D9FF0 /* Enemy.m in Sources */,
 				CDDD0C82183246CD004D9FF0 /* EnemyProjectile.m in Sources */,
 				CDDD0C80183246CD004D9FF0 /* Enemy1.m in Sources */,
+				CDB71E5318325064007D2945 /* PhotoViewController.m in Sources */,
 				CDDD0C8E183246CD004D9FF0 /* Projectile.m in Sources */,
 				CDDD0C7D183246CD004D9FF0 /* DarkMatterProjectile.m in Sources */,
 				CDDD0C8B183246CD004D9FF0 /* Object.m in Sources */,
+				CDB71E4918325043007D2945 /* ProjectileViewController.m in Sources */,
 				CDDD0C8F183246CD004D9FF0 /* UnstoppableProjectile.m in Sources */,
 				CDDD0C8C183246CD004D9FF0 /* Playfield.m in Sources */,
 				CDDD0C7C183246CD004D9FF0 /* Cannon.m in Sources */,
