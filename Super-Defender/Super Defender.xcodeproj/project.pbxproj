@@ -770,13 +770,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "data/Super Defender-Prefix.pch";
 				INFOPLIST_FILE = "data/Super Defender-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "371F708D-EA0F-4639-9AA4-B0F80B9D2C7F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "371F708D-EA0F-4639-9AA4-B0F80B9D2C7F";
+				PROVISIONING_PROFILE = "24398090-D1F2-4B9F-BE2F-F62A14C332AB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "24398090-D1F2-4B9F-BE2F-F62A14C332AB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -785,13 +785,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "data/Super Defender-Prefix.pch";
 				INFOPLIST_FILE = "data/Super Defender-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "371F708D-EA0F-4639-9AA4-B0F80B9D2C7F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "371F708D-EA0F-4639-9AA4-B0F80B9D2C7F";
+				PROVISIONING_PROFILE = "24398090-D1F2-4B9F-BE2F-F62A14C332AB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "24398090-D1F2-4B9F-BE2F-F62A14C332AB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -15,12 +15,12 @@
 @implementation MenuViewController
 
 @synthesize delegate;
-@synthesize menuView;
+//@synthesize menuView;
 @synthesize photoViewController;
 @synthesize upgradeViewController;
 @synthesize projectileViewController;
-@synthesize projectileView;
-@synthesize upgradeView;
+//@synthesize projectileView;
+//@synthesize upgradeView;
 
 @synthesize buttonUpgradeHealth;
 @synthesize buttonUpgradeFireRate;
@@ -93,8 +93,8 @@
         // Custom initialization
         //[self.view addSubview:menuView];
         self.view.backgroundColor = [UIColor clearColor];
-        projectileView.backgroundColor = [UIColor clearColor];
-        upgradeView.backgroundColor = [UIColor clearColor];
+//        projectileView.backgroundColor = [UIColor clearColor];
+//        upgradeView.backgroundColor = [UIColor clearColor];
         photoViewController = [[PhotoViewController alloc] init];
         upgradeViewController = [[UpgradeViewController alloc] init];
         projectileViewController = [[ProjectileViewController alloc] init];
@@ -147,13 +147,13 @@
 -(IBAction)projectileMenuClosed:(id)sender
 {
     //[self.view removeFromSuperview];
-    self.view = menuView;
+//    self.view = view;
 }
 
 -(IBAction)upgradeMenuClosed:(id)sender
 {
     [self.view removeFromSuperview];
-    self.view = menuView;
+//    self.view = menuView;
     [delegate menuClosed];
     [delegate createPlayfield];
 }
@@ -167,7 +167,7 @@
         [self.view addSubview:photoViewController.pickImageView];
     } else if (sender == self.newgame) {
         [delegate newGame:photoViewController.selectedImage.image];
-        self.view = upgradeView;
+//        self.view = upgradeView;
     }else if(sender == self.projectileBackButton || sender == self.upgradeBackButton)
         {
             [self projectileMenuClosed:nil];
@@ -325,7 +325,7 @@
 
 - (IBAction) projectileViewButtonTapped:(id) sender {
     //[self.view addSubview:emptyView];
-    self.view = projectileView;
+//    self.view = projectileView;
     //[menuView removeFromSuperview];
     //curView = projectileView;
 }
@@ -340,9 +340,9 @@
     [self.imageKnop dealloc];
     [self.newgame dealloc];
     [self.delegate release];
-    [menuView dealloc];
-    [projectileView dealloc];
-    [upgradeView dealloc];
+//    [menuView dealloc];
+//    [projectileView dealloc];
+//    [upgradeView dealloc];
     [upgradeButtons dealloc];
     [projectileButtons dealloc];
     [projectileScoreLabel dealloc];

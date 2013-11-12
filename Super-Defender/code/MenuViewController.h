@@ -36,9 +36,9 @@
 @property (nonatomic, strong) UpgradeViewController *upgradeViewController;
 @property (nonatomic, strong) ProjectileViewController *projectileViewController;
 
-@property (nonatomic, strong) IBOutlet UIView *menuView;
-@property (nonatomic, strong) IBOutlet UIView *projectileView;
-@property (nonatomic, strong) IBOutlet UIView *upgradeView;
+//@property (nonatomic, strong) IBOutlet UIView *menuView;
+//@property (nonatomic, strong) IBOutlet UIView *projectileView;
+//@property (nonatomic, strong) IBOutlet UIView *upgradeView;
 
 @property (nonatomic, strong) IBOutlet UIButton *buttonUpgradeHealth;
 @property (nonatomic, strong) IBOutlet UIButton *buttonUpgradeFireRate;
