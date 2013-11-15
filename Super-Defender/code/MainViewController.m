@@ -155,7 +155,7 @@
             self.accelerometer = YES;
         } else {
             NSLog(@"Ik heb geen accelerometer!");
-//            @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"dontBeLazyAndPutItOnYourDeviceException"] userInfo:nil];
+            @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"dontBeLazyAndPutItOnYourDeviceException"] userInfo:nil];
         }
         
         self.renderedObjects = [[NSMutableArray alloc] init];
