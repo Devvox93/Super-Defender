@@ -15,12 +15,17 @@
 @implementation MenuViewController
 
 @synthesize delegate;
-//@synthesize menuView;
+@synthesize menuView;
 @synthesize photoViewController;
 @synthesize upgradeViewController;
 @synthesize projectileViewController;
 //@synthesize projectileView;
 //@synthesize upgradeView;
+
+@synthesize projectileViewButton;
+@synthesize resumeKnop;
+@synthesize imageKnop;
+@synthesize newgame;
 
 @synthesize buttonUpgradeHealth;
 @synthesize buttonUpgradeFireRate;
@@ -71,13 +76,12 @@
 @synthesize upgradeScrapLabel;
 @synthesize score;
 
-@synthesize projectileViewButton;
-
 @synthesize gameData;
 
 - (MenuViewController *)init : (GameData *)par_gameData
 {
     gameData = par_gameData;
+    [self initWithNibName:@"MenuViewController" bundle:nil];
     return [super init];
 }
 
@@ -91,55 +95,58 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        //[self.view addSubview:menuView];
-        self.view.backgroundColor = [UIColor clearColor];
-//        projectileView.backgroundColor = [UIColor clearColor];
-//        upgradeView.backgroundColor = [UIColor clearColor];
-        photoViewController = [[PhotoViewController alloc] init];
+        UIGraphicsBeginImageContext(self.view.frame.size);
+        [[UIImage imageNamed:@"menu.png"] drawInRect:self.view.bounds];
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+        
+        [self.view addSubview:menuView];
+        photoViewController = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
         upgradeViewController = [[UpgradeViewController alloc] init];
         projectileViewController = [[ProjectileViewController alloc] init];
                 
-        projectileButtons = [[NSMutableArray alloc]init];
-        [projectileButtons addObject:buttonProjectilePower];
-        [projectileButtons addObject:buttonProjectileFireRate];
-        [projectileButtons addObject:buttonProjectileMoveSpeed];
-        [projectileButtons addObject:buttonProjectileUnstopable];
-        [projectileButtons addObject:buttonProjectileDarkMatter];
-        
-        projectileCostLabels = [[NSMutableArray alloc]init];
-        [projectileCostLabels addObject:projectilePowerCost];
-        [projectileCostLabels addObject:projectileFirerateCost];
-        [projectileCostLabels addObject:projectileMoveSpeedCost];
-        [projectileCostLabels addObject:projectileUnstoppableCost];
-        [projectileCostLabels addObject:projectileDarkmMatterCost];
-        
-        projectileAmountLabels = [[NSMutableArray alloc]init];
-        [projectileAmountLabels addObject:projectilePowerAmount];
-        [projectileAmountLabels addObject:projectileFirerateAmount];
-        [projectileAmountLabels addObject:projectileMoveSpeedAmount];
-        [projectileAmountLabels addObject:projectileUnstoppableAmount];
-        [projectileAmountLabels addObject:projectileDarkmMatterAmount];
-        
-        upgradeButtons = [[NSMutableArray alloc]init];
-        [upgradeButtons addObject:buttonUpgradeHealth];
-        [upgradeButtons addObject:buttonUpgradeFireRate];
-        [upgradeButtons addObject:buttonUpgradeMoveSpeed];
-        [upgradeButtons addObject:buttonUpgradePower];
-        [upgradeButtons addObject:buttonUpgradeRotSpeed];
-        
-        upgradeCostLabels = [[NSMutableArray alloc]init];
-        [upgradeCostLabels addObject:upgradeHealthCost];
-        [upgradeCostLabels addObject:upgradeFirerateCost];
-        [upgradeCostLabels addObject:upgradeMoveSpeedCost];
-        [upgradeCostLabels addObject:upgradePowerCost];
-        [upgradeCostLabels addObject:upgradeRotSpeedCost];
-        
-        upgradeAmountLabels = [[NSMutableArray alloc]init];
-        [upgradeAmountLabels addObject:upgradeHealthAmount];
-        [upgradeAmountLabels addObject:upgradeFirerateAmount];
-        [upgradeAmountLabels addObject:upgradeMoveSpeedAmount];
-        [upgradeAmountLabels addObject:upgradePowerAmount];
-        [upgradeAmountLabels addObject:upgradeRotSpeedAmount];
+//        projectileButtons = [[NSMutableArray alloc]init];
+//        [projectileButtons addObject:buttonProjectilePower];
+//        [projectileButtons addObject:buttonProjectileFireRate];
+//        [projectileButtons addObject:buttonProjectileMoveSpeed];
+//        [projectileButtons addObject:buttonProjectileUnstopable];
+//        [projectileButtons addObject:buttonProjectileDarkMatter];
+//        
+//        projectileCostLabels = [[NSMutableArray alloc]init];
+//        [projectileCostLabels addObject:projectilePowerCost];
+//        [projectileCostLabels addObject:projectileFirerateCost];
+//        [projectileCostLabels addObject:projectileMoveSpeedCost];
+//        [projectileCostLabels addObject:projectileUnstoppableCost];
+//        [projectileCostLabels addObject:projectileDarkmMatterCost];
+//        
+//        projectileAmountLabels = [[NSMutableArray alloc]init];
+//        [projectileAmountLabels addObject:projectilePowerAmount];
+//        [projectileAmountLabels addObject:projectileFirerateAmount];
+//        [projectileAmountLabels addObject:projectileMoveSpeedAmount];
+//        [projectileAmountLabels addObject:projectileUnstoppableAmount];
+//        [projectileAmountLabels addObject:projectileDarkmMatterAmount];
+//        
+//        upgradeButtons = [[NSMutableArray alloc]init];
+//        [upgradeButtons addObject:buttonUpgradeHealth];
+//        [upgradeButtons addObject:buttonUpgradeFireRate];
+//        [upgradeButtons addObject:buttonUpgradeMoveSpeed];
+//        [upgradeButtons addObject:buttonUpgradePower];
+//        [upgradeButtons addObject:buttonUpgradeRotSpeed];
+//        
+//        upgradeCostLabels = [[NSMutableArray alloc]init];
+//        [upgradeCostLabels addObject:upgradeHealthCost];
+//        [upgradeCostLabels addObject:upgradeFirerateCost];
+//        [upgradeCostLabels addObject:upgradeMoveSpeedCost];
+//        [upgradeCostLabels addObject:upgradePowerCost];
+//        [upgradeCostLabels addObject:upgradeRotSpeedCost];
+//        
+//        upgradeAmountLabels = [[NSMutableArray alloc]init];
+//        [upgradeAmountLabels addObject:upgradeHealthAmount];
+//        [upgradeAmountLabels addObject:upgradeFirerateAmount];
+//        [upgradeAmountLabels addObject:upgradeMoveSpeedAmount];
+//        [upgradeAmountLabels addObject:upgradePowerAmount];
+//        [upgradeAmountLabels addObject:upgradeRotSpeedAmount];
     }
     return self;
 }
@@ -164,7 +171,7 @@
         [self.view removeFromSuperview];
         [delegate menuClosed];
     }else if (sender == self.imageKnop) {
-        [self.view addSubview:photoViewController.pickImageView];
+        [self.view addSubview:photoViewController.view];
     } else if (sender == self.newgame) {
         [delegate newGame:photoViewController.selectedImage.image];
 //        self.view = upgradeView;
@@ -178,6 +185,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning

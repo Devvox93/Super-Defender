@@ -232,7 +232,7 @@
         [self.view addSubview:unstoppableProjectileActivator];
         [self.view addSubview:darkMatterProjectileActivator];
         
-        self.mvc = [[MenuViewController alloc] init : (GameData *)gameData];
+        self.mvc = [[MenuViewController alloc] init: (GameData *)gameData];
         self.mvc.delegate = self;
         pauseButton.hidden = YES;
         scoreLabel.hidden = YES;

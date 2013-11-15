@@ -29,6 +29,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [self.view setBackgroundColor:[UIColor whiteColor]];
         NSString *imagePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/beloved.png"];
         UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
         if (image) {
@@ -45,7 +46,7 @@
     return self;
 }
 
-- (void)tap:(id)sender
+- (IBAction)tap:(id)sender
 {
     if (sender == self.doneSelecting) {
         [self.pickImageView removeFromSuperview];
@@ -53,15 +54,15 @@
         [UIImagePNGRepresentation(self.selectedImage.image) writeToFile:pngPath atomically:YES];
         if (self.firstTime) {
             [delegate newGame:self.selectedImage.image];
-            [self.view removeFromSuperview];
-            [delegate menuClosed];
         }
+        [self.view removeFromSuperview];
+        [delegate menuClosed];
     } else if (sender == self.useCamera) {
         self.picker = [[UIImagePickerController alloc] init];
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
             self.picker.sourceType = UIImagePickerControllerSourceTypeCamera;
             self.picker.allowsEditing = YES;
-            self.picker.delegate = delegate;
+            self.picker.delegate = self;
             [self presentViewController:self.picker animated:YES completion:nil];
             [self.picker release];
         } else {
@@ -73,7 +74,7 @@
         self.picker = [[UIImagePickerController alloc] init];
         self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         self.picker.allowsEditing = YES;
-        self.picker.delegate = delegate;
+        self.picker.delegate = self;
         [self presentViewController:self.picker animated:YES completion:nil];
         [self.picker release];
     }

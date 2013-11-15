@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @protocol PhotoViewControllerDelegate <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@end
+
+@protocol MenuViewControllerDelegate <NSObject>
 - (void)newGame:(UIImage *)beloved;
 - (void)menuClosed;
 @end
 
-@interface PhotoViewController : UIViewController
+@interface PhotoViewController : UIViewController <PhotoViewControllerDelegate>
 
-@property (nonatomic, assign) id <PhotoViewControllerDelegate> delegate;
+@property (nonatomic, assign) id <MenuViewControllerDelegate> delegate;
 @property (nonatomic, strong) IBOutlet UIButton *useCamera;
 @property (nonatomic, strong) IBOutlet UIButton *useLibrary;
 @property (nonatomic, strong) IBOutlet UIButton *doneSelecting;
@@ -25,7 +28,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *selectedImageLabel;
 @property (nonatomic, assign) BOOL firstTime;
 
-- (void)tap:(id)sender;
+- (IBAction)tap:(id)sender;
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker;
 

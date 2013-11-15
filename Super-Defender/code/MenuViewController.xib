@@ -7,80 +7,73 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
             <connections>
-                <outlet property="view" destination="378-t1-ozt" id="I5D-bN-l7G"/>
+                <outlet property="imageKnop" destination="2du-NL-LDf" id="8w5-Eb-e4R"/>
+                <outlet property="newgame" destination="0IO-Fo-rdr" id="cRO-Wu-sey"/>
+                <outlet property="projectileViewButton" destination="siB-zg-IPb" id="L8c-xQ-Yef"/>
+                <outlet property="resumeKnop" destination="E2i-kP-eAF" id="Bai-59-N73"/>
+                <outlet property="view" destination="1" id="Eyd-Ex-nvH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="o9S-Ew-NLG">
+        <view contentMode="scaleToFill" id="1">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="378-t1-ozt">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bGU-9c-kt0">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqt-O4-8Tj" userLabel="Hervat">
-                    <rect key="frame" x="96" y="171" width="129" height="46"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IO-Fo-rdr">
+                    <rect key="frame" x="100" y="218" width="120" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Hervat"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="129" id="egi-5N-gHh"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                    <state key="normal" title="Resume">
-                        <color key="titleColor" red="0.35294118523597717" green="1" blue="0.64705884456634521" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gk-ww-JvM">
-                    <rect key="frame" x="96" y="210" width="129" height="88"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="New Game">
-                        <color key="titleColor" red="0.35294118523597717" green="1" blue="0.64705884456634521" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleColor" red="0.35294118520000001" green="1" blue="0.64705884459999996" alpha="1" colorSpace="deviceRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="tap:" destination="-1" eventType="touchUpInside" id="JTP-GF-ZJv"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JH-x0-UwH">
-                    <rect key="frame" x="96" y="292" width="129" height="44"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siB-zg-IPb">
+                    <rect key="frame" x="100" y="305" width="120" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="o0r-6N-evB"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="Projectiles">
-                        <color key="titleColor" red="0.35294118523597717" green="1" blue="0.64705884456634521" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleColor" red="0.35294118520000001" green="1" blue="0.64705884459999996" alpha="1" colorSpace="deviceRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="tap:" destination="-1" eventType="touchUpInside" id="Ypl-Y8-td7"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrU-62-oKI">
-                    <rect key="frame" x="96" y="352" width="129" height="44"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2du-NL-LDf">
+                    <rect key="frame" x="100" y="361" width="120" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                    <state key="normal" title="Picture">
-                        <color key="titleColor" red="0.35294118523597717" green="1" blue="0.64705884456634521" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Photo">
+                        <color key="titleColor" red="0.35294118520000001" green="1" blue="0.64705884459999996" alpha="1" colorSpace="deviceRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="tap:" destination="-1" eventType="touchUpInside" id="Bsg-jJ-O1Q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2i-kP-eAF">
+                    <rect key="frame" x="100" y="162" width="120" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Resume">
+                        <color key="titleColor" red="0.35294118520000001" green="1" blue="0.64705884459999996" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tap:" destination="-1" eventType="touchUpInside" id="VdR-8l-slw"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="8Gk-ww-JvM" firstAttribute="leading" secondItem="9JH-x0-UwH" secondAttribute="leading" id="8Vf-92-GDJ"/>
-                <constraint firstItem="8Gk-ww-JvM" firstAttribute="trailing" secondItem="9JH-x0-UwH" secondAttribute="trailing" id="8Z0-hN-Hq0"/>
-                <constraint firstItem="378-t1-ozt" firstAttribute="top" secondItem="o9S-Ew-NLG" secondAttribute="top" id="9Y8-2j-gYO"/>
-                <constraint firstItem="378-t1-ozt" firstAttribute="leading" secondItem="o9S-Ew-NLG" secondAttribute="leading" id="Adz-FL-dAK"/>
-                <constraint firstItem="nqt-O4-8Tj" firstAttribute="top" secondItem="o9S-Ew-NLG" secondAttribute="top" constant="143" id="GDq-zr-dy4"/>
-                <constraint firstAttribute="bottom" secondItem="378-t1-ozt" secondAttribute="bottom" id="PmH-zX-O0b"/>
-                <constraint firstItem="8Gk-ww-JvM" firstAttribute="leading" secondItem="nqt-O4-8Tj" secondAttribute="leading" id="SHc-eV-7o2"/>
-                <constraint firstItem="9JH-x0-UwH" firstAttribute="centerX" secondItem="378-t1-ozt" secondAttribute="centerX" id="jLq-9b-wEO"/>
-                <constraint firstItem="rrU-62-oKI" firstAttribute="leading" secondItem="9JH-x0-UwH" secondAttribute="leading" id="kPY-2K-npB"/>
-                <constraint firstItem="rrU-62-oKI" firstAttribute="top" secondItem="9JH-x0-UwH" secondAttribute="bottom" constant="8" symbolic="YES" id="oZ4-p0-fsI"/>
-                <constraint firstItem="nqt-O4-8Tj" firstAttribute="trailing" secondItem="8Gk-ww-JvM" secondAttribute="trailing" id="rkC-Gk-r92"/>
-                <constraint firstAttribute="trailing" secondItem="378-t1-ozt" secondAttribute="trailing" id="uLr-dN-6lV"/>
-                <constraint firstItem="8Gk-ww-JvM" firstAttribute="top" secondItem="nqt-O4-8Tj" secondAttribute="bottom" constant="8" symbolic="YES" id="uxg-yv-a00"/>
-                <constraint firstAttribute="bottom" secondItem="rrU-62-oKI" secondAttribute="bottom" constant="139" id="x3y-F6-vT2"/>
-                <constraint firstItem="9JH-x0-UwH" firstAttribute="trailing" secondItem="rrU-62-oKI" secondAttribute="trailing" id="zkk-zb-Efx"/>
-            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
