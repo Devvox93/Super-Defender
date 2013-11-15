@@ -10,10 +10,13 @@
 #import "GameData.h"
 
 @protocol MenuViewControllerDelegate <NSObject>
+- (BOOL)runningGame;
+- (void)newGame:(UIImage *)beloved;
 - (void)menuClosed;
 - (void)createPlayfield;
+- (void)updateActivatorTitle :(int)par_number :(int)par_amount;
+- (void) updateScore:(int) score;
 @end
-
 @interface UpgradeViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIView *upgradeView;

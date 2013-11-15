@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UpgradeViewController.h"
 
 @protocol PhotoViewControllerDelegate <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
-@end
-
-@protocol MenuViewControllerDelegate <NSObject>
-- (void)newGame:(UIImage *)beloved;
-- (void)menuClosed;
 @end
 
 @interface PhotoViewController : UIViewController <PhotoViewControllerDelegate>

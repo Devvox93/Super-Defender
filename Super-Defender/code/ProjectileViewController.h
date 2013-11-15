@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GameData.h"
-
-@protocol MenuViewControllerDelegate <NSObject>
-- (void)menuClosed;
-- (void)createPlayfield;
-@end
+#import "UpgradeViewController.h"
 
 @interface ProjectileViewController : UIViewController
 

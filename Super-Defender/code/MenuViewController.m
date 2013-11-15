@@ -56,6 +56,7 @@
 
 -(IBAction)projectileMenuClosed:(id)sender
 {
+    NSLog(@"Hai");
     //[self.view removeFromSuperview];
 //    self.view = view;
 }
@@ -68,8 +69,9 @@
     }else if (sender == self.imageKnop) {
         [self.view addSubview:photoViewController.view];
     } else if (sender == self.newgame) {
-        [delegate newGame:photoViewController.selectedImage.image];
+        //[delegate newGame:photoViewController.selectedImage.image];
         [self.view addSubview: upgradeViewController.view];
+        upgradeViewController.delegate = self.delegate;
     }else if(sender == self.projectileViewButton)
         [self.view addSubview:projectileViewController.view];
 }

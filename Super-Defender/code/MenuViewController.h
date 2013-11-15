@@ -12,16 +12,6 @@
 #import "UpgradeViewController.h"
 #import "ProjectileViewController.h"
 
-
-@protocol MenuViewControllerDelegate <NSObject>
-- (BOOL)runningGame;
-- (void)newGame:(UIImage *)beloved;
-- (void)menuClosed;
-- (void)createPlayfield;
-- (void)updateActivatorTitle :(int)par_number :(int)par_amount;
-- (void) updateScore:(int) score;
-@end
-
 @interface MenuViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIButton *projectileViewButton;

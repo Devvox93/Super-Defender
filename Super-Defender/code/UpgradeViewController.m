@@ -83,9 +83,11 @@
 
 -(IBAction)upgradeMenuClosed:(id)sender
 {
+    NSLog(@"Olla");
     [self.view removeFromSuperview];
     [delegate menuClosed];
-    [delegate createPlayfield];
+    [delegate newGame:nil];
+    NSLog(@"%@", delegate);
 }
 
 - (void) loadUpgradeViewData

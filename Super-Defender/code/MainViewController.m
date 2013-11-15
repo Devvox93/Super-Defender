@@ -52,7 +52,7 @@
     } else if (sender == self.powerProjectileActivator) {
         if (self.playfield.cannon.specialProjectile == 0) {
             tempNumber = [[[gameData.gameData objectForKey:@"projectilePower"] objectForKey:@"amount"] intValue];
-    
+            
             if(tempNumber >= 10)
             {
                 self.playfield.cannon.specialProjectile = 1;
@@ -155,7 +155,7 @@
             self.accelerometer = YES;
         } else {
             NSLog(@"Ik heb geen accelerometer!");
-            @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"dontBeLazyAndPutItOnYourDeviceException"] userInfo:nil];
+            //@throw [NSException exceptionWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"dontBeLazyAndPutItOnYourDeviceException"] userInfo:nil];
         }
         
         self.renderedObjects = [[NSMutableArray alloc] init];
@@ -292,6 +292,14 @@
     if (self.playfield) {
         [playfield release];
     }
+    [self.mvc.view removeFromSuperview];
+    NSNumber *tempHealth = [[gameData.gameData objectForKey:@"upgradeHealth"] objectForKey:@"amount"];
+    NSNumber *tempFireRate = [[gameData.gameData objectForKey:@"upgradeFireRate"] objectForKey:@"amount"];
+    NSNumber *tempMoveSpeed = [[gameData.gameData objectForKey:@"upgradeMoveSpeed"] objectForKey:@"amount"];
+    NSNumber *tempPower = [[gameData.gameData objectForKey:@"upgradePower"] objectForKey:@"amount"];
+    NSNumber *tempRotSpeed = [[gameData.gameData objectForKey:@"upgradeRotSpeed"] objectForKey:@"amount"];
+    self.playfield = [[Playfield alloc] init : [tempHealth intValue] : [tempFireRate intValue] : [tempMoveSpeed intValue] : [tempPower intValue] : [tempRotSpeed intValue]];
+    cannonBody.frame = CGRectMake(playfield.cannon.posX - playfield.cannon.width / 2, playfield.cannon.posY - playfield.cannon.height / 2, playfield.cannon.width, playfield.cannon.height);
     if (self.objectButtons) {
         for (int i = 0; i < self.objectButtons.count; i++) {
             UIButton *delete = [self.objectButtons objectAtIndex:i];
@@ -308,8 +316,9 @@
     [lightningProjectileActivator setTitle:[NSString stringWithFormat:@"%@", [[gameData.gameData objectForKey:@"projectileMoveSpeed"] objectForKey:@"amount"]] forState:UIControlStateNormal];
     [unstoppableProjectileActivator setTitle:[NSString stringWithFormat:@"%@", [[gameData.gameData objectForKey:@"projectileUnstoppable"] objectForKey:@"amount"]] forState:UIControlStateNormal];
     [darkMatterProjectileActivator setTitle:[NSString stringWithFormat:@"%@", [[gameData.gameData objectForKey:@"projectileDarkMatter"] objectForKey:@"amount"]] forState:UIControlStateNormal];
-    
-    self.beloved.image = beloved;
+    if(beloved) {
+        self.beloved.image = beloved;
+    }
     cannonBarrel.hidden = NO;
     cannonBody.hidden = NO;
     self.cannonHealth.hidden = NO;
@@ -320,13 +329,6 @@
 
 -(void)createPlayfield
 {
-    NSNumber *tempHealth = [[gameData.gameData objectForKey:@"upgradeHealth"] objectForKey:@"amount"];
-    NSNumber *tempFireRate = [[gameData.gameData objectForKey:@"upgradeFireRate"] objectForKey:@"amount"];
-    NSNumber *tempMoveSpeed = [[gameData.gameData objectForKey:@"upgradeMoveSpeed"] objectForKey:@"amount"];
-    NSNumber *tempPower = [[gameData.gameData objectForKey:@"upgradePower"] objectForKey:@"amount"];
-    NSNumber *tempRotSpeed = [[gameData.gameData objectForKey:@"upgradeRotSpeed"] objectForKey:@"amount"];
-    self.playfield = [[Playfield alloc] init : [tempHealth intValue] : [tempFireRate intValue] : [tempMoveSpeed intValue] : [tempPower intValue] : [tempRotSpeed intValue]];
-    cannonBody.frame = CGRectMake(playfield.cannon.posX - playfield.cannon.width / 2, playfield.cannon.posY - playfield.cannon.height / 2, playfield.cannon.width, playfield.cannon.height);
 }
 
 - (void)saveGame
@@ -357,10 +359,10 @@
 - (void)update:(NSTimer *)timer
 {
     
-        float x = self.motionManager.accelerometerData.acceleration.x;
-        x = roundf(x*100)/100;
-        float bla = 0.5 + x/3;
-        [playfield update:bla*180];
+    float x = self.motionManager.accelerometerData.acceleration.x;
+    x = roundf(x*100)/100;
+    float bla = 0.5 + x/3;
+    [playfield update:bla*180];
     
     if (playfield.cannon.health <= 0) {
         [self stopTimer];
