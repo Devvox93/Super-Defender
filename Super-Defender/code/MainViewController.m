@@ -34,6 +34,9 @@
 @synthesize unstoppableProjectileActivator;
 @synthesize darkMatterProjectileActivator;
 
+
+
+
 - (void) buttonTap:(id) sender {
     int tempNumber = 0;
     NSString *tempString;
@@ -232,7 +235,7 @@
         [self.view addSubview:unstoppableProjectileActivator];
         [self.view addSubview:darkMatterProjectileActivator];
         
-        self.mvc = [[MenuViewController alloc] init: (GameData *)gameData];
+        self.mvc = [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:nil gamedata:gameData];
         self.mvc.delegate = self;
         pauseButton.hidden = YES;
         scoreLabel.hidden = YES;
@@ -311,6 +314,8 @@
     cannonBody.hidden = NO;
     self.cannonHealth.hidden = NO;
     self.beloved.hidden = NO;
+    
+    
 }
 
 -(void)createPlayfield

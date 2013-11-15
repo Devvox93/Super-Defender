@@ -7,6 +7,23 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProjectileViewController">
             <connections>
+                <outlet property="buttonProjectileDarkMatter" destination="IyG-ig-uxx" id="3Yn-hW-dS9"/>
+                <outlet property="buttonProjectileFireRate" destination="Zus-EG-xOt" id="Bj0-DT-Gf9"/>
+                <outlet property="buttonProjectileMoveSpeed" destination="hV2-OR-McP" id="IH8-TL-XNe"/>
+                <outlet property="buttonProjectilePower" destination="9dA-Cw-wM0" id="knx-kh-vns"/>
+                <outlet property="buttonProjectileUnstopable" destination="4F0-Bb-5jA" id="8za-rM-9nW"/>
+                <outlet property="projectileBackButton" destination="Uhc-Kz-om1" id="RP2-i6-8Ey"/>
+                <outlet property="projectileDarkmMatterAmount" destination="gSI-5E-oIn" id="pTF-VA-ZOo"/>
+                <outlet property="projectileDarkmMatterCost" destination="Z89-ml-Wd8" id="dcg-dp-aym"/>
+                <outlet property="projectileFirerateAmount" destination="sj1-DF-830" id="gCB-m8-Dg7"/>
+                <outlet property="projectileFirerateCost" destination="StY-gm-Tno" id="cVq-kf-ghM"/>
+                <outlet property="projectileMoveSpeedAmount" destination="7tn-lT-AyJ" id="YGq-fr-ylw"/>
+                <outlet property="projectileMoveSpeedCost" destination="P60-1b-hvn" id="k0H-Le-Muy"/>
+                <outlet property="projectilePowerAmount" destination="7Yc-2L-Nt4" id="8oV-eu-Ggv"/>
+                <outlet property="projectilePowerCost" destination="7X6-Yh-Nep" id="bhe-Wb-pud"/>
+                <outlet property="projectileScoreLabel" destination="7rQ-Ev-NzG" id="Sha-83-BPf"/>
+                <outlet property="projectileUnstoppableAmount" destination="iC0-HO-ZRY" id="AcP-HC-HlU"/>
+                <outlet property="projectileUnstoppableCost" destination="G2a-7f-1ZX" id="EC6-4q-Ege"/>
                 <outlet property="view" destination="WEo-0D-70R" id="hG4-ek-Du1"/>
             </connections>
         </placeholder>
@@ -20,7 +37,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="SCORE: 1280" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rQ-Ev-NzG">
-                    <rect key="frame" x="38" y="88" width="194" height="21"/>
+                    <rect key="frame" x="38" y="88" width="132" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="194" id="Ss1-PD-hYD"/>
@@ -183,6 +200,9 @@
                         <attributedString key="attributedTitle"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="projectileButtonTapped:" destination="-1" eventType="touchUpInside" id="D8w-8Q-ern"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="projectileFireRate" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zus-EG-xOt">
                     <rect key="frame" x="38" y="245" width="55" height="56"/>
@@ -194,6 +214,9 @@
                     <state key="normal" backgroundImage="PrateOfFire.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="projectileButtonTapped:" destination="-1" eventType="touchUpInside" id="urQ-gC-17C"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="projectileMoveSpeed" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-OR-McP">
                     <rect key="frame" x="38" y="324" width="55" height="56"/>
@@ -205,6 +228,9 @@
                     <state key="normal" backgroundImage="PmoveSpeed.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="projectileButtonTapped:" destination="-1" eventType="touchUpInside" id="SOS-AH-9iZ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="projectileUnstoppable" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F0-Bb-5jA">
                     <rect key="frame" x="38" y="401" width="55" height="56"/>
@@ -216,6 +242,9 @@
                     <state key="normal" backgroundImage="Punstoppable.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="projectileButtonTapped:" destination="-1" eventType="touchUpInside" id="Svz-0e-6nC"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="projectileDarkMatter" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-ig-uxx">
                     <rect key="frame" x="38" y="478" width="55" height="56"/>
@@ -227,6 +256,9 @@
                     <state key="normal" backgroundImage="PdarkMatter.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="projectileButtonTapped:" destination="-1" eventType="touchUpInside" id="dz4-z6-GO9"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="projectileBackButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhc-Kz-om1">
                     <rect key="frame" x="213" y="85" width="75" height="28"/>
@@ -243,6 +275,9 @@
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="projectileMenuClosed:" destination="-1" eventType="touchUpInside" id="Mn8-8X-3Ha"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
