@@ -49,6 +49,7 @@
         self.mvc.projectileViewButton.hidden = NO;
         [self.view addSubview:self.mvc.view];
         [self.mvc visible];
+        [self updateScore:playfield.score];
     } else if (sender == self.powerProjectileActivator) {
         if (self.playfield.cannon.specialProjectile == 0) {
             tempNumber = [[[gameData.gameData objectForKey:@"projectilePower"] objectForKey:@"amount"] intValue];
@@ -129,6 +130,11 @@
 - (void) updateScore:(int) score
 {
     playfield.score = score;
+}
+
+- (int) getScore
+{
+    return playfield.score;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -287,7 +293,7 @@
     }
 }
 
-- (void) newGame:(UIImage *)beloved
+- (void) newGame
 {
     if (self.playfield) {
         [playfield release];
@@ -316,15 +322,17 @@
     [lightningProjectileActivator setTitle:[NSString stringWithFormat:@"%@", [[gameData.gameData objectForKey:@"projectileMoveSpeed"] objectForKey:@"amount"]] forState:UIControlStateNormal];
     [unstoppableProjectileActivator setTitle:[NSString stringWithFormat:@"%@", [[gameData.gameData objectForKey:@"projectileUnstoppable"] objectForKey:@"amount"]] forState:UIControlStateNormal];
     [darkMatterProjectileActivator setTitle:[NSString stringWithFormat:@"%@", [[gameData.gameData objectForKey:@"projectileDarkMatter"] objectForKey:@"amount"]] forState:UIControlStateNormal];
-    if(beloved) {
-        self.beloved.image = beloved;
-    }
     cannonBarrel.hidden = NO;
     cannonBody.hidden = NO;
     self.cannonHealth.hidden = NO;
     self.beloved.hidden = NO;
-    
-    
+}
+
+- (void) setImage:(UIImage *)beloved
+{
+    if(beloved) {
+        self.beloved.image = beloved;
+    }
 }
 
 -(void)createPlayfield

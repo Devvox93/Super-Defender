@@ -60,7 +60,8 @@
 @property (nonatomic, strong) UIButton *unstoppableProjectileActivator;
 @property (nonatomic, strong) UIButton *darkMatterProjectileActivator;
 
-- (void) newGame:(UIImage *)beloved;
+- (void) setImage:(UIImage *)beloved;
+- (void) newGame;
 - (BOOL) runningGame;
 - (void) update:(NSTimer *)timer;
 - (void) render;

@@ -75,19 +75,15 @@
         [upgradeAmountLabels addObject:upgradeMoveSpeedAmount];
         [upgradeAmountLabels addObject:upgradePowerAmount];
         [upgradeAmountLabels addObject:upgradeRotSpeedAmount];
-
-        [self loadUpgradeViewData];
     }
     return self;
 }
 
 -(IBAction)upgradeMenuClosed:(id)sender
 {
-    NSLog(@"Olla");
     [self.view removeFromSuperview];
     [delegate menuClosed];
-    [delegate newGame:nil];
-    NSLog(@"%@", delegate);
+    [delegate newGame];
 }
 
 - (void) loadUpgradeViewData

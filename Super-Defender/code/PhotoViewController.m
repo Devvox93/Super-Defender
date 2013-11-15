@@ -29,6 +29,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+//        self.delegate = delegate;
         [self.view setBackgroundColor:[UIColor whiteColor]];
         NSString *imagePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/beloved.png"];
         UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
@@ -52,11 +53,11 @@
         [self.pickImageView removeFromSuperview];
         NSString  *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/beloved.png"];
         [UIImagePNGRepresentation(self.selectedImage.image) writeToFile:pngPath atomically:YES];
-        if (self.firstTime) {
-            [delegate newGame:self.selectedImage.image];
-        }
+//        if (self.firstTime){
+            [delegate setImage:self.selectedImage.image];
+        NSLog(@"%@", delegate);
+//        }
         [self.view removeFromSuperview];
-        [delegate menuClosed];
     } else if (sender == self.useCamera) {
         self.picker = [[UIImagePickerController alloc] init];
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {

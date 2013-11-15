@@ -76,13 +76,15 @@
         [projectileAmountLabels addObject:projectileMoveSpeedAmount];
         [projectileAmountLabels addObject:projectileUnstoppableAmount];
         [projectileAmountLabels addObject:projectileDarkmMatterAmount];
+        
+        self.delegate = delegate;
     }
     return self;
 }
 
 - (void) loadProjectileViewData
 {
-    projectileScoreLabel.text = [NSString stringWithFormat:@"SCORE: %i", score];
+    projectileScoreLabel.text = [NSString stringWithFormat:@"SCORE: %i", delegate.getScore];
     for(int i = 0; i<projectileButtons.count; i++)
     {
         UIButton *tempButton = [projectileButtons objectAtIndex:i];
@@ -94,9 +96,14 @@
         
         UILabel *tempLabelAmount = [projectileAmountLabels objectAtIndex:i];
         tempLabelAmount.text = [NSString stringWithFormat:@"UP: %@", [[gameData.gameData objectForKey:tempId] objectForKey:@"amount"]];
-        //[tempId release];
     }
 }
+
+-(IBAction)projectileMenuClosed:(id)sender
+{
+    [self.view removeFromSuperview];
+}
+
 - (IBAction) projectileButtonTapped:(id)sender
 {
     NSString *tempId = [sender restorationIdentifier];

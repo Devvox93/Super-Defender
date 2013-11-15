@@ -54,26 +54,23 @@
     return self;
 }
 
--(IBAction)projectileMenuClosed:(id)sender
-{
-    NSLog(@"Hai");
-    //[self.view removeFromSuperview];
-//    self.view = view;
-}
-
 - (void)tap:(id)sender
 {
     if (sender == self.resumeKnop) {
         [self.view removeFromSuperview];
         [delegate menuClosed];
     }else if (sender == self.imageKnop) {
+        photoViewController.delegate = delegate;
         [self.view addSubview:photoViewController.view];
     } else if (sender == self.newgame) {
-        //[delegate newGame:photoViewController.selectedImage.image];
+        upgradeViewController.delegate = delegate;
+        [upgradeViewController loadUpgradeViewData];
         [self.view addSubview: upgradeViewController.view];
-        upgradeViewController.delegate = self.delegate;
-    }else if(sender == self.projectileViewButton)
+    }else if(sender == self.projectileViewButton) {
+        projectileViewController.delegate = delegate;
+        [projectileViewController loadProjectileViewData];
         [self.view addSubview:projectileViewController.view];
+    }
 }
 
 - (void)viewDidLoad
@@ -99,13 +96,6 @@
         [self.resumeKnop setEnabled:NO];
         [projectileViewButton setEnabled:NO];
     }
-}
-
-- (IBAction) projectileViewButtonTapped:(id) sender {
-    //[self.view addSubview:emptyView];
-//    self.view = projectileView;
-    //[menuView removeFromSuperview];
-    //curView = projectileView;
 }
 
 - (void) dealloc

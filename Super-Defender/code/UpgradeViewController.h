@@ -11,11 +11,13 @@
 
 @protocol MenuViewControllerDelegate <NSObject>
 - (BOOL)runningGame;
-- (void)newGame:(UIImage *)beloved;
+- (void)newGame;
+- (void)setImage:(UIImage *)beloved;
 - (void)menuClosed;
 - (void)createPlayfield;
 - (void)updateActivatorTitle :(int)par_number :(int)par_amount;
 - (void) updateScore:(int) score;
+- (int) getScore;
 @end
 @interface UpgradeViewController : UIViewController
 

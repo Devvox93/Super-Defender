@@ -33,7 +33,6 @@
 
 - (MenuViewController *)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil gamedata:(GameData *)par_gameData;
 - (IBAction)tap:(id)sender;
-- (IBAction) projectileViewButtonTapped:(id) sender;
 - (void) visible;
 
 @end
